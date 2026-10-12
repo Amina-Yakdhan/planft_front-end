@@ -1,0 +1,954 @@
+.clients-page {
+  padding-bottom: 3rem;
+}
+
+.clients-page__header,
+.clients-toolbar,
+.clients-card__top,
+.client-card__top,
+.client-card__actions,
+.client-card__metrics,
+.attendance-calendar__controls,
+.attendance-modal__header,
+.clients-drawer__header {
+  display: flex;
+  align-items: center;
+  
+}
+
+.clients-page__header {
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0.5rem 0 1.75rem;
+ 
+}
+
+.clients-page__eyebrow {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--sport-lime, #22c55e);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.clients-page__header h1 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+}
+
+.clients-page__subtitle {
+  color: var(--sport-muted);
+}
+
+.clients-page__add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 2.9rem;
+  padding: 0.7rem 1.1rem;
+  white-space: nowrap;
+}
+
+.clients-toolbar {
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border: 1px solid var(--sport-border);
+  border-radius: 1rem;
+  background: var(--sport-panel);
+  box-shadow: var(--sport-shadow);
+}
+
+.clients-search {
+  position: relative;
+  flex: 1 1 20rem;
+}
+
+.clients-search > .bi {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0.9rem;
+  color: var(--sport-muted);
+  transform: translateY(-50%);
+}
+
+.clients-search .form-control {
+  padding-left: 2.6rem;
+}
+
+.clients-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--sport-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.clients-filter .form-select {
+  min-width: 13rem;
+}
+
+.clients-toolbar__count {
+  color: var(--sport-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+
+.client-card {
+  height: 100%;
+  min-width: 0;
+  border: 1px solid var(--sport-border) !important;
+  border-top: 2px solid var(--sport-lime, #22c55e) !important;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.client-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(34, 197, 94, 0.42) !important;
+}
+
+.client-card .card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 15.5rem;
+  padding: 1.2rem;
+}
+
+.client-card__top {
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.client-card__identity {
+  min-width: 0;
+}
+
+.client-card__identity .card-title {
+  overflow-wrap: anywhere;
+  font-size: 1.13rem;
+}
+
+.client-card__identity .badge {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.69rem;
+  font-weight: 700;
+  white-space: normal;
+}
+
+.client-card__actions {
+  flex: 0 0 auto;
+  gap: 0.5rem;
+}
+
+.client-card__calendar,
+.client-card__menu-trigger,
+.clients-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  color: var(--sport-muted);
+  border: 1px solid transparent;
+  border-radius: 0.65rem;
+  background: transparent;
+  transition: color 150ms ease, border-color 150ms ease, background 150ms ease;
+}
+
+.client-card__calendar:hover,
+.client-card__menu-trigger:hover,
+.clients-icon-button:hover {
+  color: var(--sport-lime, #22c55e);
+  border-color: var(--sport-border);
+  background: rgba(249, 252, 252, 0.918);
+}
+
+.client-card__calendar {
+  color: var(--sport-cyan, #22c55e);
+}
+
+.client-card__menu-wrap {
+  position: relative;
+}
+
+.client-card__menu {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  width: 10.5rem;
+  padding: 0.35rem;
+  border: 1px solid var(--sport-border);
+  border-radius: 0.8rem;
+  background: var(--sport-blue-dark, #101316);
+  box-shadow: var(--sport-shadow);
+}
+
+.client-card__menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.6rem 0.65rem;
+  color: var(--sport-text);
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  text-align: left;
+}
+
+.client-card__menu button:hover {
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.client-card__menu .client-card__menu-delete {
+  color: #f87171;
+}
+
+.client-card__metrics {
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin-top: 1.1rem;
+  color: var(--sport-muted);
+  font-size: 0.82rem;
+}
+
+.client-card__metrics span,
+.client-card__schedule {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.client-card__metrics .bi,
+.client-card__schedule .bi {
+  color: var(--sport-cyan, #22c55e);
+}
+
+.client-card__schedule {
+  margin-top: 0.85rem;
+  color: var(--sport-muted);
+  font-size: 0.8rem;
+}
+
+.client-card__program-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.4rem;
+  margin-top: 0.65rem;
+  color: var(--sport-cyan, #22c55e);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.client-card__program-link:hover,
+.client-card__program-link:focus-visible {
+  color: var(--sport-lime, #22c55e);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.client-card__missed-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #fca5a5;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.client-card__missed-summary .bi {
+  flex: 0 0 auto;
+  color: #f87171;
+}
+
+.client-card__attendance,
+.client-card__attended {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  width: 100%;
+  min-height: 2.65rem;
+  margin-top: auto;
+  border-radius: 0.7rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.client-card__attended {
+  color: #dcfce7;
+  border: 1px solid rgba(34, 197, 94, 0.32);
+  background: rgba(22, 163, 74, 0.24);
+}
+
+.clients-empty {
+  padding: 4rem 1.25rem;
+  border: 1px dashed var(--sport-border);
+  border-radius: 1rem;
+  color: var(--sport-muted);
+  background: var(--sport-panel);
+  text-align: center;
+}
+
+.clients-empty > .bi {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: var(--sport-cyan, #22c55e);
+  font-size: 2rem;
+}
+
+.clients-empty h2 {
+  font-size: 1.25rem;
+}
+
+.clients-empty p {
+  margin-bottom: 1rem;
+}
+
+.clients-overlay {
+  position: fixed;
+  z-index: 1050;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(3, 8, 12, 0.68);
+  backdrop-filter: blur(4px);
+}
+
+.clients-drawer {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 31rem);
+  height: 100%;
+  color: var(--sport-text);
+  border-left: 1px solid var(--sport-border);
+  background: var(--sport-navy);
+  box-shadow: -20px 0 60px rgba(238, 236, 236, 0.301);
+  animation: clients-slide-in 220ms ease-out;
+}
+
+.clients-drawer__header,
+.attendance-modal__header {
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 1.5rem;
+  border-bottom: 1px solid var(--sport-border);
+}
+
+.clients-drawer__header h2,
+.attendance-modal__header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.clients-drawer__body {
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.clients-drawer .form-label,
+.attendance-modal .form-label {
+  color: var(--sport-muted);
+}
+
+.clients-weekday-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.clients-weekday-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--sport-border);
+  border-radius: 0.65rem;
+  background: var(--sport-panel);
+  cursor: pointer;
+}
+
+.clients-weekday-option .form-check-input {
+  flex: 0 0 auto;
+  margin: 0;
+  accent-color: #06b6d4 !important;
+}
+
+.clients-weekday-option .form-check-input:checked,
+:root[data-theme='light'] .clients-page .clients-weekday-option .form-check-input:checked {
+  accent-color: #06b6d4 !important;
+  background-color: #06b6d4 !important;
+  border-color: #06b6d4 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e") !important;
+}
+
+.clients-calculated-field:disabled {
+  color: var(--sport-text);
+  background: rgba(106, 135, 177, 0.1);
+  border-color: var(--sport-border);
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.clients-overlay--center {
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.attendance-modal {
+  width: min(100%, 48rem);
+  max-height: min(94vh, 62rem);
+  overflow-y: auto;
+  color: var(--sport-text);
+  border: 1px solid rgba(34, 197, 94, 0.712);
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, #bbf7d0 0%, #ecfdf5 45%, #ffffff 100%);
+  box-shadow: 0 24px 60px rgba(34, 197, 94, 0.16);
+  animation: clients-modal-in 180ms ease-out;
+}
+
+.attendance-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 1rem 1.25rem;
+  padding: 0.8rem;
+  border: 1px solid var(--sport-border);
+  border-radius: 0.8rem;
+  color: var(--sport-muted);
+  background: var(--sport-panel);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.attendance-summary__attended {
+  color: #4ade80;
+}
+
+.attendance-summary__absent {
+  color: #f87171;
+}
+
+.attendance-summary__pending {
+  color: #facc15;
+}
+
+.attendance-summary__separator {
+  opacity: 0.55;
+}
+
+.attendance-calendar__controls {
+  justify-content: space-between;
+  margin: 0.6rem 1.25rem 0.8rem;
+}
+
+.attendance-calendar__controls h3 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.attendance-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 0 1.5rem;
+}
+
+.attendance-calendar__weekday {
+  padding: 0.55rem 0;
+  color: var(--sport-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.attendance-calendar__blank {
+  min-height: 3.6rem;
+}
+
+.attendance-calendar__day {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  min-height: 3.6rem;
+  padding: 0.4rem 0;
+  color: var(--sport-text);
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  background: transparent;
+  font-size: 0.95rem;
+}
+
+.attendance-calendar__day:hover,
+.attendance-calendar__day.is-selected {
+  border-color: var(--sport-cyan, #22c55e);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.attendance-calendar__day--none {
+  color: var(--sport-muted);
+  opacity: 0.72;
+}
+
+.attendance-calendar__dot {
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+}
+
+.attendance-calendar__day--attended .attendance-calendar__dot,
+.attendance-calendar__dot--attended {
+  background: #22c55e;
+  box-shadow: 0 0 0.55rem rgba(34, 197, 94, 0.4);
+}
+
+.attendance-calendar__day--absent .attendance-calendar__dot,
+.attendance-calendar__dot--absent {
+  background: #ef4444;
+}
+
+.attendance-calendar__day--pending .attendance-calendar__dot,
+.attendance-calendar__dot--pending {
+  background: #eab308;
+}
+
+.attendance-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.1rem;
+  margin: 1rem 1.25rem 1.1rem;
+  color: var(--sport-muted);
+  font-size: 0.73rem;
+}
+
+.attendance-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.attendance-missed-history {
+  margin: 0 1.25rem 1.1rem;
+  padding: 0.9rem;
+  border: 1px solid var(--sport-border);
+  border-radius: 0.8rem;
+  background: var(--sport-panel);
+}
+
+.attendance-missed-history h3 {
+  margin: 0 0 0.55rem;
+  color: var(--sport-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.attendance-missed-history ul {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding-left: 1.15rem;
+  color: #fca5a5;
+  font-size: 0.78rem;
+  text-transform: capitalize;
+}
+
+.attendance-missed-history p {
+  margin: 0;
+  color: var(--sport-muted);
+  font-size: 0.78rem;
+}
+
+.attendance-day-editor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 1.25rem 1.25rem;
+  padding: 0.9rem;
+  border: 1px solid var(--sport-border);
+  border-radius: 0.8rem;
+  background: var(--sport-panel);
+}
+
+.attendance-day-editor > div:first-child {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.attendance-day-editor strong {
+  color: var(--sport-heading);
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.attendance-day-editor span {
+  color: var(--sport-muted);
+  font-size: 0.72rem;
+}
+
+.attendance-day-editor__actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.4rem;
+}
+
+.attendance-day-editor__actions .btn {
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.attendance-day-editor__absent {
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  background: rgba(127, 29, 29, 0.18);
+}
+
+.attendance-day-editor__absent:hover {
+  color: #fff;
+  background: #b91c1c;
+}
+
+@keyframes clients-slide-in {
+  from { transform: translateX(1rem); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes clients-modal-in {
+  from { transform: translateY(0.5rem) scale(0.99); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+:root[data-theme='light'] .client-card__menu {
+  background: #fff;
+}
+
+:root[data-theme='light'] .client-card__identity .card-title,
+:root[data-theme='light'] .attendance-day-editor strong {
+  color: var(--sport-heading);
+}
+
+:root[data-theme='light'] .client-card__attended {
+  color: #166534;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+@media (max-width: 700px) {
+  .clients-page__header {
+    align-items: flex-start;
+  }
+
+  .clients-toolbar {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .clients-search {
+    flex-basis: 100%;
+  }
+
+  .clients-filter {
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .clients-filter .form-select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .clients-toolbar__count {
+    align-self: flex-end;
+    padding-bottom: 0.75rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .clients-page__header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .clients-page__add {
+    align-self: flex-start;
+  }
+
+  .attendance-day-editor {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .attendance-day-editor__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.clients-page .clients-toolbar,
+.clients-page .client-card,
+.clients-page .clients-empty,
+.clients-page .clients-drawer,
+.clients-page .attendance-modal,
+.clients-page .attendance-summary,
+.clients-page .attendance-missed-history,
+.clients-page .attendance-day-editor,
+.clients-page .clients-weekday-option {
+  border-color: var(--glass-border, rgba(133, 194, 121, 0.945));
+  background: var(--glass-surface, rgba(202, 228, 222, 0.973));
+  box-shadow: var(--glass-shadow, 0 18px 48px rgba(199, 209, 206, 0.74));
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+.clients-page .client-card {
+  border-top-color: rgba(34, 197, 94, 0.5) !important;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.clients-page .client-card:hover {
+  border-color: rgba(34, 197, 94, 0.788) !important;
+  box-shadow: 0 20px 50px rgba(34, 197, 94, 0.1) !important;
+}
+
+.clients-page .client-card__menu {
+  border-color: var(--glass-border, rgba(4, 122, 67, 0.842));
+  background: var(--glass-surface-raised, rgba(241, 244, 250, 0.54));
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+.clients-page .form-control,
+.clients-page .form-select {
+  color: var(--sport-heading);
+  border-color: var(--glass-border, rgba(1, 100, 14, 0.842));
+  background-color: var(--glass-surface-raised, rgba(244, 245, 248, 0.54));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.clients-page .clients-search .form-control {
+  padding-left: 2.6rem;
+}
+
+:root[data-theme='light'] .clients-page .clients-toolbar,
+:root[data-theme='light'] .clients-page .client-card,
+:root[data-theme='light'] .clients-page .clients-empty,
+:root[data-theme='light'] .clients-page .clients-drawer,
+:root[data-theme='light'] .clients-page .attendance-modal,
+:root[data-theme='light'] .clients-page .attendance-summary,
+:root[data-theme='light'] .clients-page .attendance-missed-history,
+:root[data-theme='light'] .clients-page .attendance-day-editor,
+:root[data-theme='light'] .clients-page .clients-weekday-option {
+  color: #0f172a;
+  border-color: rgba(163, 230, 53, 0.4);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 44px rgba(51, 65, 85, 0.1);
+}
+
+:root[data-theme='light'] .clients-page .form-control,
+:root[data-theme='light'] .clients-page .form-select {
+  color: #0f172a;
+  border-color: rgba(163, 230, 53, 0.4);
+  background-color: rgba(255, 255, 255, 0.84);
+  color-scheme: light;
+}
+
+:root[data-theme='light'] .clients-page .client-card__identity .card-title,
+:root[data-theme='light'] .clients-page .attendance-modal h2,
+:root[data-theme='light'] .clients-page .attendance-calendar__controls h3,
+:root[data-theme='light'] .clients-page .attendance-day-editor strong {
+  color: #0f172a;
+}
+
+:root[data-theme='light'] .clients-page .client-card__metrics,
+:root[data-theme='light'] .clients-page .client-card__schedule,
+:root[data-theme='light'] .clients-page .clients-filter,
+:root[data-theme='light'] .clients-page .clients-toolbar__count {
+  color: #334155;
+}
+
+:root[data-theme='light'] .clients-page .client-card__menu {
+  color: #0f172a;
+  border-color: rgba(2, 85, 2, 0.863);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+:root[data-theme='light'] .clients-page .client-card__menu button {
+  color: #0f172a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clients-drawer,
+  .attendance-modal {
+    animation: none;
+  }
+}
+
+.clients-page {
+  --glass-surface: rgba(238, 238, 245, 0.62);
+  --glass-surface-raised: rgba(255, 255, 255, 0.842);
+  --glass-border: rgba(6, 121, 16, 0.836);
+}
+
+.clients-page .clients-toolbar,
+.clients-page .client-card,
+.clients-page .clients-empty,
+.clients-page .clients-drawer,
+.clients-page .attendance-modal,
+.clients-page .attendance-summary,
+.clients-page .attendance-missed-history,
+.clients-page .attendance-day-editor,
+.clients-page .clients-weekday-option,
+.clients-page .client-card__menu {
+  border-color: var(--glass-border);
+  background: var(--glass-surface);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+}
+
+.clients-page .client-card:hover,
+.clients-page .client-card__calendar:hover,
+.clients-page .client-card__menu-trigger:hover,
+.clients-page .clients-icon-button:hover {
+  border-color: rgba(34, 197, 94, 0.45);
+}
+
+.clients-page .form-control,
+.clients-page .form-select {
+  color: var(--sport-text);
+  border-color: var(--glass-border);
+  background: var(--glass-surface-raised);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+:root[data-theme='light'] .clients-page {
+  --glass-surface: rgba(255, 255, 255, 0.76);
+  --glass-surface-raised: rgba(255, 255, 255, 0.86);
+  --glass-border: rgba(71, 85, 105, 0.16);
+}
+
+:root[data-theme='light'] .clients-page .clients-toolbar,
+:root[data-theme='light'] .clients-page .client-card,
+:root[data-theme='light'] .clients-page .clients-empty,
+:root[data-theme='light'] .clients-page .clients-drawer,
+:root[data-theme='light'] .clients-page .attendance-modal,
+:root[data-theme='light'] .clients-page .attendance-summary,
+:root[data-theme='light'] .clients-page .attendance-missed-history,
+:root[data-theme='light'] .clients-page .attendance-day-editor,
+:root[data-theme='light'] .clients-page .clients-weekday-option,
+:root[data-theme='light'] .clients-page .client-card__menu {
+  color: #09090b;
+  border-color: rgba(4, 85, 22, 0.897);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 18px 44px rgba(144, 223, 183, 0.548);
+}
+
+:root[data-theme='light'] .clients-page :is(
+  .client-card, .clients-toolbar, .clients-empty, .clients-drawer,
+  .attendance-modal, .attendance-summary, .attendance-missed-history,
+  .attendance-day-editor, .clients-weekday-option, .client-card__menu
+) :is(h1, h2, h3, h4, h5, p, label, span, strong, small, button, .bi) {
+  color: #09090b;
+}
+
+:root[data-theme='light'] .clients-page .form-control,
+:root[data-theme='light'] .clients-page .form-select {
+  color: #09090b;
+  border-color: rgb(31, 126, 102);
+  background: rgba(203, 233, 221, 0.86);
+  color-scheme: light;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer {
+  color: #09090b;
+  background: #f8fafc !important;
+  border-left-color: #059611 !important;
+  box-shadow: -20px 0 48px rgba(15, 23, 42, 0.12) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer__header {
+  background: #ffffff;
+  border-bottom-color: #e2e8f0;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer__header h2 {
+  color: #111827 !important;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer__body {
+  background: #f8fafc;
+}
+
+.clients-page .attendance-modal,
+:root[data-theme='light'] .clients-page .attendance-modal {
+  width: min(100%, 48rem);
+  max-height: min(94vh, 62rem);
+  color: #0f172a;
+  border-color: rgba(34, 197, 94, 0.28) !important;
+  background: linear-gradient(180deg, #bbf7d0 0%, #ecfdf5 42%, #ffffff 100%) !important;
+  box-shadow: 0 24px 60px rgba(34, 197, 94, 0.16) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.clients-page .attendance-modal__header h2,
+.clients-page .attendance-calendar__controls h3,
+:root[data-theme='light'] .clients-page .attendance-modal h2,
+:root[data-theme='light'] .clients-page .attendance-calendar__controls h3 {
+  color: #14532d !important;
+}
+
+.clients-page .attendance-summary,
+.clients-page .attendance-missed-history,
+.clients-page .attendance-day-editor,
+:root[data-theme='light'] .clients-page .attendance-summary,
+:root[data-theme='light'] .clients-page .attendance-missed-history,
+:root[data-theme='light'] .clients-page .attendance-day-editor {
+  background: #ffffff !important;
+  border-color: rgba(34, 197, 94, 0.18) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}

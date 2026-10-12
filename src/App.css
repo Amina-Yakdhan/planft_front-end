@@ -1,0 +1,3189 @@
+.navbar.navbar-dark.bg-dark {
+  position: relative;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(151, 194, 247, 0.2);
+  background: linear-gradient(105deg, #09090b 0%, #09090b 58%, #22c55e 100%) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24) !important;
+}
+
+.navbar .container {
+  max-width: 1320px;
+}
+
+.navbar .navbar-brand {
+  color: #f8fafc !important;
+  font-size: 1.35rem;
+  letter-spacing: -0.04em;
+}
+
+.navbar .navbar-brand:hover {
+  color: #86efac !important;
+}
+
+.navbar .nav-link {
+  margin: 0 0.2rem;
+  padding: 0.55rem 0.85rem !important;
+  border-radius: 0.55rem;
+  color: #cbd5e1 !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff !important;
+  background: rgba(34, 197, 94, 0.16);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-left: 1rem;
+  padding: 0.55rem 0.8rem;
+  color: #eaf3ff;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  border-radius: 0.65rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: #fff;
+  background: rgba(34, 197, 94, 0.16);
+  border-color: rgba(34, 197, 94, 0.65);
+}
+
+.theme-toggle .bi {
+  color: #4ade80;
+}
+
+.container {
+  max-width: 1320px;
+}
+
+#root > .container {
+  padding-bottom: 3rem;
+}
+
+.card {
+  overflow: hidden;
+  color: var(--sport-text);
+  background: var(--sport-panel);
+  border: 1px solid var(--sport-border);
+  border-radius: 1rem;
+  box-shadow: var(--sport-shadow) !important;
+  backdrop-filter: blur(12px);
+}
+
+.card-title,
+.card h4,
+.card h5 {
+  color: #f2f7ff;
+}
+
+.card.bg-primary {
+  background: linear-gradient(145deg, #2589f4 0%, #1453aa 100%) !important;
+}
+
+.card.bg-success {
+  background: linear-gradient(145deg, #1769d2 0%, #10386e 100%) !important;
+}
+
+.card.bg-dark {
+  background: linear-gradient(145deg, #18181b 0%, #091a32 100%) !important;
+}
+
+.dashboard-nutrition-card {
+  background: linear-gradient(145deg, #166534 0%, #22c55e 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 16px 34px rgba(34, 197, 94, 0.2) !important;
+}
+
+.dashboard-nutrition-card h2 { color: #fff; font-size: clamp(2.8rem, 5vw, 4rem); line-height: 1; }
+.dashboard-nutrition-card .card-title { color: rgba(255, 255, 255, 0.8); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; }
+.dashboard-nutrition-card a { color: #fff !important; }
+
+.card.bg-primary,
+.card.bg-success,
+.card.bg-dark {
+  border-color: rgba(34, 197, 94, 0.22);
+}
+
+.card.bg-primary h2,
+.card.bg-success h2,
+.card.bg-dark h2 {
+  color: #fff;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.card.bg-primary .card-title,
+.card.bg-success .card-title,
+.card.bg-dark .card-title {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.card.bg-primary a,
+.card.bg-success a,
+.card.bg-dark a {
+  color: #fff !important;
+}
+
+.table-responsive {
+  overflow: auto;
+  color: var(--sport-text);
+  background: rgba(11, 31, 57, 0.82) !important;
+  border: 1px solid var(--sport-border);
+  border-radius: 1rem;
+  box-shadow: var(--sport-shadow);
+}
+
+.smart-back-row { display: flex; min-height: 2.5rem; align-items: center; margin: -0.7rem 0 0.35rem; }
+.smart-back-button { display: inline-flex; min-height: 2.1rem; align-items: center; gap: 0.45rem; padding: 0 0.7rem; color: var(--sport-muted); border: 1px solid var(--sport-border); border-radius: 0.55rem; background: var(--sport-panel); font-size: 0.72rem; font-weight: 650; transition: color 150ms ease, border-color 150ms ease, background 150ms ease; }
+.smart-back-button:hover,
+.smart-back-button:focus-visible { color: var(--sport-heading); border-color: rgba(34, 197, 94, 0.4); background: rgba(34, 197, 94, 0.08); }
+.smart-back-button > .bi { color: var(--sport-cyan); }
+
+.table {
+  --bs-table-color: #dceaff;
+  --bs-table-bg: transparent;
+  --bs-table-border-color: rgba(161, 194, 235, 0.13);
+  --bs-table-hover-color: #fff;
+  --bs-table-hover-bg: rgba(72, 145, 230, 0.1);
+  margin-bottom: 0;
+}
+
+.table > thead {
+  color: #a9c9ef;
+  background: rgba(31, 75, 126, 0.42);
+}
+
+.table-light {
+  --bs-table-color: #b9d4f4;
+  --bs-table-bg: rgba(31, 75, 126, 0.42);
+  --bs-table-border-color: var(--sport-border);
+}
+
+.form-label {
+  color: #c3d6ee;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  min-height: 2.75rem;
+  color: #eaf3ff;
+  background-color: rgba(5, 20, 40, 0.68);
+  border: 1px solid rgba(147, 184, 226, 0.24);
+  border-radius: 0.65rem;
+}
+
+.form-control::placeholder {
+  color: #8198b6;
+}
+
+.form-control:focus,
+.form-select:focus {
+  color: #fff;
+  background-color: rgba(7, 26, 50, 0.92);
+  border-color: #4c9cff;
+  box-shadow: 0 0 0 0.2rem rgba(49, 133, 229, 0.2);
+}
+
+.form-select option {
+  color: #eaf3ff;
+  background: #0c2342;
+}
+
+.btn-success,
+.btn-primary,
+.btn-success-custom {
+  color: #fff;
+  background: linear-gradient(110deg, #2589f4, #1557b2);
+  border: 0;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(10, 76, 158, 0.25);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-success-custom:hover,
+.btn-success-custom:focus {
+  color: #fff;
+  background: linear-gradient(110deg, #4b9fff, #1c69ca);
+}
+
+.btn-outline-primary {
+  color: #4ade80;
+  border-color: #22c55e;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #fff;
+  background: #15803d;
+  border-color: #15803d;
+}
+
+.program-builder {
+  padding-bottom: 2rem;
+}
+
+.program-builder__heading {
+  color: #f4f9ff;
+  letter-spacing: -0.03em;
+}
+
+.program-builder__panel,
+.program-builder__preview {
+  background: rgba(9, 22, 38, 0.85);
+  border: 1px solid rgba(147, 184, 226, 0.22);
+  border-radius: 1.1rem;
+  backdrop-filter: blur(12px);
+}
+
+.program-builder__section-title {
+  color: #4ade80;
+  letter-spacing: 0.08em;
+}
+
+.program-builder__preview-title {
+  color: #f3f8ff;
+}
+
+.program-builder__preview-title span {
+  color: #ff5a52;
+}
+
+.program-builder__description,
+.program-builder__empty {
+  color: #b9cce5 !important;
+}
+
+.program-builder__exercise-list {
+  gap: 0.65rem;
+}
+
+.program-builder__exercise-item {
+  padding: 0.9rem 0.25rem;
+  border-color: rgba(147, 184, 226, 0.18) !important;
+  background: rgba(18, 38, 64, 0.34) !important;
+  border-radius: 0.75rem;
+}
+
+.program-builder__badge {
+  color: #e9f3ff;
+  background: linear-gradient(135deg, #1d8ef0, #0d5bbb);
+  padding: 0.5rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.program-builder .form-control,
+.program-builder .form-select {
+  background: rgba(5, 20, 40, 0.7);
+  border-color: rgba(147, 184, 226, 0.2);
+  color: #eaf3ff;
+}
+
+.program-builder .form-control::placeholder {
+  color: #8198b6;
+}
+
+.program-builder .form-control:focus,
+.program-builder .form-select:focus {
+  background: rgba(7, 26, 50, 0.9);
+  border-color: #4c9cff;
+  box-shadow: 0 0 0 0.2rem rgba(49, 133, 229, 0.2);
+}
+
+.program-builder optgroup {
+  color: #dfeaff;
+  background: #0c2342;
+}
+
+.badge.bg-info {
+  color: #e9f4ff !important;
+  background: linear-gradient(115deg, #166534, #22c55e) !important;
+}
+
+.badge.bg-secondary,
+.badge.bg-dark {
+  color: #eaf3ff !important;
+  background: #1b4779 !important;
+}
+
+.border-success {
+  border-color: #22c55e !important;
+}
+
+.text-success,
+.text-primary {
+  color: #4ade80 !important;
+}
+
+.text-dark {
+  color: #f3f8ff !important;
+}
+
+.text-secondary {
+  color: #9dbce0 !important;
+}
+
+.text-muted {
+  color: #9eb3d0 !important;
+}
+
+.list-group-item {
+  color: #dceaff;
+  background: rgba(8, 29, 55, 0.84);
+  border-color: var(--sport-border);
+}
+
+:root[data-theme='light'] .navbar.navbar-dark.bg-dark {
+  border-bottom-color: rgba(151, 194, 247, 0.35);
+}
+
+:root[data-theme='light'] .card:not(.bg-primary):not(.bg-success):not(.bg-dark) {
+  color: var(--sport-text);
+  background: var(--sport-panel);
+  border-color: var(--sport-border);
+}
+
+:root[data-theme='light'] .card-title,
+:root[data-theme='light'] .card h4,
+:root[data-theme='light'] .card h5 {
+  color: var(--sport-heading);
+}
+
+:root[data-theme='light'] .table-responsive {
+  color: var(--sport-text);
+  background: rgba(255, 255, 255, 0.92) !important;
+}
+
+:root[data-theme='light'] .table {
+  --bs-table-color: #294563;
+  --bs-table-border-color: rgba(34, 78, 128, 0.12);
+  --bs-table-hover-color: #123253;
+  --bs-table-hover-bg: rgba(57, 130, 209, 0.08);
+}
+
+:root[data-theme='light'] .table > thead,
+:root[data-theme='light'] .table-light {
+  --bs-table-color: #25496e;
+  --bs-table-bg: #eaf3fd;
+  --bs-table-border-color: var(--sport-border);
+  color: #25496e;
+  background: #eaf3fd;
+}
+
+:root[data-theme='light'] .form-label {
+  color: #365573;
+}
+
+:root[data-theme='light'] .form-control,
+:root[data-theme='light'] .form-select {
+  color: #18324f;
+  background-color: #fff;
+  border-color: rgba(34, 78, 128, 0.22);
+}
+
+:root[data-theme='light'] .form-control::placeholder {
+  color: #8295aa;
+}
+
+:root[data-theme='light'] .form-control:focus,
+:root[data-theme='light'] .form-select:focus {
+  color: #18324f;
+  background-color: #fff;
+}
+
+:root[data-theme='light'] .form-select option {
+  color: #18324f;
+  background: #fff;
+}
+
+:root[data-theme='light'] .theme-toggle {
+  color: #f2f7fd;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+:root[data-theme='light'] .theme-toggle .bi {
+  color: #ffdc7a;
+}
+
+:root[data-theme='light'] .list-group-item {
+  color: #294563;
+  background: #f6faff;
+}
+
+:root[data-theme='light'] .text-dark {
+  color: #18324f !important;
+}
+
+:root[data-theme='light'] .text-secondary {
+  color: #617792 !important;
+}
+
+:root[data-theme='light'] .text-muted {
+  color: #6d829a !important;
+}
+
+@media (max-width: 767.98px) {
+  .navbar .nav-link {
+    margin: 0.15rem 0;
+  }
+
+  .theme-toggle {
+    margin-left: 0.5rem;
+  }
+
+  #root > .container {
+    padding-bottom: 2rem;
+  }
+}
+
+.navbar-custom {
+  position: sticky;
+  top: 0.75rem;
+  z-index: 1030;
+  margin: 0.75rem 1rem 2rem;
+  padding: 0.65rem 0;
+  border: 1px solid var(--sport-border);
+  border-radius: 1.1rem;
+  background: rgba(15, 23, 42, 0.76);
+  box-shadow: 0 12px 36px rgba(5, 5, 20, 0.2);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+
+.navbar-custom .container {
+  max-width: 1320px;
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--sport-heading) !important;
+  letter-spacing: -0.045em;
+}
+
+.brand-accent,
+.accent-text {
+  color: #22c55e;
+  background: var(--sport-accent-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-custom .nav-link {
+  color: rgba(244, 241, 255, 0.75) !important;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus,
+.navbar-custom .nav-link.active {
+  color: #fff !important;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: var(--sport-border);
+}
+
+.navbar-custom .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.28);
+}
+
+.theme-toggle {
+  margin-left: 0.5rem;
+  color: var(--sport-heading);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--sport-border);
+  border-radius: 0.75rem;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: var(--sport-heading);
+  background: rgba(34, 197, 94, 0.17);
+  border-color: rgba(34, 197, 94, 0.52);
+}
+
+.theme-toggle:active {
+  transform: translateY(1px);
+}
+
+.theme-toggle .bi {
+  color: #4ade80;
+}
+
+.card:not(.bg-primary):not(.bg-success):not(.bg-dark),
+.program-builder__panel,
+.program-builder__preview {
+  background: var(--sport-panel);
+  border: 1px solid var(--sport-border);
+  box-shadow: var(--sport-shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.card:not(.bg-primary):not(.bg-success):not(.bg-dark) .card-title,
+.card:not(.bg-primary):not(.bg-success):not(.bg-dark) h4,
+.card:not(.bg-primary):not(.bg-success):not(.bg-dark) h5 {
+  color: var(--sport-heading);
+}
+
+.card.bg-primary,
+.card.bg-success,
+.card.bg-dark {
+  background: var(--sport-accent-gradient) !important;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 18px 38px rgba(34, 197, 94, 0.16) !important;
+}
+
+.card.bg-success {
+  background: linear-gradient(115deg, #166534 0%, #22c55e 100%) !important;
+}
+
+.card.bg-dark {
+  background: linear-gradient(115deg, #111827 0%, #334155 100%) !important;
+}
+
+.card.bg-primary h2,
+.card.bg-success h2,
+.card.bg-dark h2 {
+  color: #fff;
+}
+
+.btn-success,
+.btn-primary,
+.btn-success-custom {
+  color: #fff;
+  background: var(--sport-accent-gradient);
+  border: 0;
+  box-shadow: 0 9px 22px rgba(34, 197, 94, 0.2);
+  transition: box-shadow 160ms ease, filter 160ms ease, transform 160ms ease;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-success-custom:hover,
+.btn-success:focus,
+.btn-primary:focus,
+.btn-success-custom:focus {
+  color: #fff;
+  background: var(--sport-accent-gradient);
+  filter: brightness(1.1);
+  box-shadow: 0 12px 26px rgba(34, 197, 94, 0.22);
+  transform: translateY(-1px);
+}
+
+.btn-outline-danger {
+  color: #4ade80;
+  border-color: rgba(34, 197, 94, 0.55);
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+  color: #fff;
+  background: #15803d;
+  border-color: #15803d;
+}
+
+.table-responsive {
+  color: var(--sport-text);
+  background: var(--sport-panel) !important;
+  border-color: var(--sport-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.table,
+.table.table-dark {
+  --bs-table-color: var(--sport-text);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--sport-border);
+  --bs-table-hover-color: var(--sport-heading);
+  --bs-table-hover-bg: rgba(34, 197, 94, 0.1);
+  --bs-table-striped-color: var(--sport-text);
+}
+
+.table > thead,
+.table.table-dark > thead {
+  color: var(--sport-heading);
+  background: rgba(34, 197, 94, 0.13);
+}
+
+.table-light,
+.table-light-custom {
+  --bs-table-color: var(--sport-heading);
+  --bs-table-bg: rgba(34, 197, 94, 0.13);
+}
+
+.form-label {
+  color: var(--sport-muted);
+}
+
+.form-control,
+.form-select {
+  color: var(--sport-text);
+  background-color: rgba(15, 23, 42, 0.52);
+  border-color: var(--sport-border);
+}
+
+.form-control::placeholder {
+  color: var(--sport-muted);
+  opacity: 0.72;
+}
+
+.form-control:focus,
+.form-select:focus {
+  color: var(--sport-heading);
+  background-color: rgba(15, 23, 42, 0.78);
+  border-color: #22c55e;
+  box-shadow: 0 0 0 0.22rem rgba(34, 197, 94, 0.2);
+}
+
+.form-select option,
+.program-builder optgroup {
+  color: var(--sport-text);
+  background: #17152b;
+}
+
+.program-builder__section-title,
+.program-builder__preview-title span,
+.program-builder__heading {
+  color: var(--sport-heading);
+}
+
+.program-builder__section-title {
+  color: #4ade80;
+}
+
+.program-builder__exercise-item,
+.list-group-item {
+  color: var(--sport-text);
+  background: rgba(255, 255, 255, 0.035);
+  border-color: var(--sport-border) !important;
+}
+
+.program-builder__badge,
+.badge-monitor {
+  color: #fff;
+  background: var(--sport-accent-gradient);
+}
+
+.page-heading,
+.auth-heading {
+  color: var(--sport-heading);
+}
+
+.accent-link {
+  color: var(--sport-link);
+  font-weight: 600;
+  text-decoration-color: rgba(34, 197, 94, 0.35);
+  text-underline-offset: 0.2em;
+}
+
+.accent-link:hover {
+  color: var(--sport-link-hover);
+}
+
+.client-card {
+  border-left-color: #22c55e !important;
+}
+
+.btn-edit-client {
+  color: #fff;
+  background-color: #087f96;
+  border-color: #087f96;
+}
+
+.btn-edit-client:hover,
+.btn-edit-client:focus-visible {
+  color: #fff;
+  background-color: #066779;
+  border-color: #066779;
+}
+
+.highlight-text {
+  color: #4ade80;
+}
+
+.calculation-panel {
+  color: var(--sport-muted);
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px dashed var(--sport-border);
+}
+
+.text-success,
+.text-primary {
+  color: #4ade80 !important;
+}
+
+.text-info {
+  color: #4ade80 !important;
+}
+
+:root[data-theme='light'] .navbar-custom {
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.1);
+}
+
+:root[data-theme='light'] .navbar-custom .navbar-brand {
+  color: var(--sport-heading) !important;
+}
+
+:root[data-theme='light'] .navbar-custom .nav-link {
+  color: #334155 !important;
+}
+
+:root[data-theme='light'] .navbar-custom .nav-link:hover,
+:root[data-theme='light'] .navbar-custom .nav-link:focus,
+:root[data-theme='light'] .navbar-custom .nav-link.active {
+  color: #166534 !important;
+  background: rgba(34, 197, 94, 0.09);
+}
+
+:root[data-theme='light'] .navbar-custom .navbar-toggler {
+  border-color: rgba(51, 65, 85, 0.24);
+}
+
+:root[data-theme='light'] .navbar-custom .navbar-toggler-icon {
+  filter: invert(0.65) sepia(0.2) saturate(1.4);
+}
+
+:root[data-theme='light'] .navbar-custom .text-white-50 {
+  color: var(--sport-muted) !important;
+}
+
+:root[data-theme='light'] .theme-toggle {
+  color: var(--sport-heading);
+  background: rgba(34, 197, 94, 0.06);
+}
+
+:root[data-theme='light'] .theme-toggle:hover,
+:root[data-theme='light'] .theme-toggle:focus-visible {
+  color: var(--sport-heading);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+:root[data-theme='light'] .card:not(.bg-primary):not(.bg-success):not(.bg-dark),
+:root[data-theme='light'] .program-builder__panel,
+:root[data-theme='light'] .program-builder__preview {
+  background: var(--sport-panel);
+}
+
+:root[data-theme='light'] .table-responsive {
+  background: var(--sport-panel) !important;
+}
+
+:root[data-theme='light'] .form-control,
+:root[data-theme='light'] .form-select,
+:root[data-theme='light'] .program-builder .form-control,
+:root[data-theme='light'] .program-builder .form-select {
+  color: var(--sport-text);
+  background-color: rgba(255, 255, 255, 0.84);
+  border-color: var(--sport-border);
+}
+
+:root[data-theme='light'] .form-control:focus,
+:root[data-theme='light'] .form-select:focus {
+  color: var(--sport-heading);
+  background-color: #fff;
+}
+
+:root[data-theme='light'] .form-select option,
+:root[data-theme='light'] .program-builder optgroup {
+  color: var(--sport-text);
+  background: #fff;
+}
+
+:root[data-theme='light'] .program-builder__exercise-item,
+:root[data-theme='light'] .list-group-item {
+  color: var(--sport-text);
+  background: rgba(255, 255, 255, 0.66);
+}
+
+:root[data-theme='light'] .container > .text-white {
+  color: var(--sport-heading) !important;
+}
+
+:root[data-theme='light'] .page-heading,
+:root[data-theme='light'] .auth-heading {
+  color: var(--sport-heading) !important;
+}
+
+:root[data-theme='light'] .card:not(.bg-primary):not(.bg-success):not(.bg-dark) .card-title.text-white,
+:root[data-theme='light'] .table .text-white:not(.badge) {
+  color: var(--sport-heading) !important;
+}
+
+:root[data-theme='light'] .highlight-text {
+  color: #166534;
+}
+
+:root[data-theme='light'] .calculation-panel {
+  background: rgba(34, 197, 94, 0.06) !important;
+  border-color: var(--sport-border) !important;
+}
+
+:root[data-theme='light'] .card.bg-primary .card-title,
+:root[data-theme='light'] .card.bg-success .card-title,
+:root[data-theme='light'] .card.bg-dark .card-title,
+:root[data-theme='light'] .card.bg-primary h2,
+:root[data-theme='light'] .card.bg-success h2,
+:root[data-theme='light'] .card.bg-dark h2,
+:root[data-theme='light'] .card.bg-primary a,
+:root[data-theme='light'] .card.bg-success a,
+:root[data-theme='light'] .card.bg-dark a {
+  color: #fff !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-collapse {
+    padding-top: 0.75rem;
+  }
+
+  .navbar-custom .nav-item {
+    margin: 0.15rem 0;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-custom {
+    top: 0.4rem;
+    margin: 0.4rem 0.5rem 1.5rem;
+    border-radius: 0.9rem;
+  }
+}
+
+/* Cyan and lime accents on obsidian glass surfaces. */
+.navbar-custom {
+  background:
+    linear-gradient(110deg, rgba(34, 197, 94, 0.1), rgba(34, 197, 94, 0.07)),
+    rgba(9, 9, 11, 0.78);
+  border-color: rgba(134, 239, 172, 0.18);
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus,
+.navbar-custom .nav-link.active,
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.32);
+}
+
+.navbar-custom .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.24);
+}
+
+.navbar-custom .navbar-toggler-icon {
+  filter: hue-rotate(145deg) saturate(1.4);
+}
+
+.theme-toggle .bi {
+  color: var(--sport-cyan);
+}
+
+.brand-accent,
+.accent-text {
+  color: var(--sport-cyan);
+}
+
+.card.bg-primary,
+.card.bg-success,
+.card.bg-dark {
+  border-color: rgba(134, 239, 172, 0.24);
+  box-shadow: 0 18px 38px rgba(34, 197, 94, 0.12) !important;
+}
+
+.card.bg-primary {
+  background: linear-gradient(135deg, #15803d, #166534) !important;
+}
+
+.card.bg-success {
+  background: linear-gradient(135deg, #16a34a, #15803d) !important;
+}
+
+.card.bg-dark {
+  background: linear-gradient(135deg, #11191b, #09090b) !important;
+}
+
+.btn-success,
+.btn-primary,
+.btn-success-custom,
+.program-builder__badge,
+.badge-monitor {
+  background: var(--sport-accent-gradient);
+}
+
+.btn-success,
+.btn-primary,
+.btn-success-custom {
+  box-shadow: 0 9px 22px rgba(34, 197, 94, 0.16);
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-success-custom:hover,
+.btn-success:focus,
+.btn-primary:focus,
+.btn-success-custom:focus {
+  background: var(--sport-accent-gradient);
+  box-shadow: 0 12px 26px rgba(34, 197, 94, 0.2);
+}
+
+.btn-outline-danger {
+  color: #86efac;
+  border-color: rgba(34, 197, 94, 0.45);
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+.form-control:focus,
+.form-select:focus,
+.program-builder .form-control:focus,
+.program-builder .form-select:focus {
+  border-color: var(--sport-cyan);
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.18);
+}
+
+.program-builder__panel,
+.program-builder__preview {
+  background:
+    linear-gradient(135deg, rgba(34, 197, 94, 0.045), rgba(34, 197, 94, 0.035)),
+    var(--sport-panel);
+}
+
+.program-builder__section-title,
+.highlight-text {
+  color: var(--sport-lime);
+}
+
+.program-builder__preview-title span,
+.text-info {
+  color: var(--sport-cyan) !important;
+}
+
+.border-success,
+.client-card {
+  border-color: var(--sport-lime) !important;
+}
+
+.text-success,
+.text-primary {
+  color: #4ade80 !important;
+}
+
+.accent-link {
+  text-decoration-color: rgba(34, 197, 94, 0.4);
+}
+
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: min(680px, calc(100vh - 150px));
+  margin: 0 auto 3rem;
+}
+
+.auth-card {
+  position: relative;
+  width: 100%;
+  padding: clamp(1.5rem, 5vw, 2.5rem) !important;
+  border-color: rgba(134, 239, 172, 0.2);
+  background:
+    linear-gradient(140deg, rgba(34, 197, 94, 0.07), transparent 48%),
+    linear-gradient(320deg, rgba(34, 197, 94, 0.055), transparent 42%),
+    var(--sport-panel);
+}
+
+.auth-card::before {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  left: 10%;
+  height: 1px;
+  background: var(--sport-accent-gradient);
+  content: "";
+}
+
+.auth-heading {
+  letter-spacing: 0.035em;
+}
+
+:root[data-theme='light'] .navbar-custom {
+  background:
+    linear-gradient(110deg, rgba(34, 197, 94, 0.09), rgba(34, 197, 94, 0.06)),
+    rgba(255, 255, 255, 0.82);
+}
+
+:root[data-theme='light'] .navbar-custom .nav-link:hover,
+:root[data-theme='light'] .navbar-custom .nav-link:focus,
+:root[data-theme='light'] .navbar-custom .nav-link.active {
+  color: #0e5965 !important;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+:root[data-theme='light'] .theme-toggle:hover,
+:root[data-theme='light'] .theme-toggle:focus-visible {
+  background: rgba(34, 197, 94, 0.1);
+}
+
+:root[data-theme='light'] .auth-card {
+  border-color: rgba(34, 197, 94, 0.2);
+}
+
+@media (max-width: 575.98px) {
+  .auth-page {
+    min-height: calc(100vh - 130px);
+  }
+}
+
+/* Shared glass surfaces let the animated backdrop remain visible. */
+.navbar-custom,
+.card:not(.bg-primary):not(.bg-success):not(.bg-dark),
+.table-responsive,
+.program-builder__panel,
+.program-builder__preview,
+.clients-toolbar,
+.client-card,
+.clients-empty,
+.clients-drawer,
+.attendance-modal,
+.attendance-summary,
+.attendance-missed-history,
+.attendance-day-editor,
+.clients-weekday-option {
+  border-color: var(--glass-border);
+  background-color: var(--glass-surface);
+  box-shadow: var(--glass-shadow) !important;
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+.navbar-custom {
+  background:
+    linear-gradient(110deg, rgba(34, 197, 94, 0.08), rgba(34, 197, 94, 0.06)),
+    var(--glass-surface);
+}
+
+.form-control,
+.form-select,
+.clients-page .form-control,
+.clients-page .form-select {
+  color: var(--sport-heading);
+  border-color: var(--glass-border);
+  background-color: var(--glass-surface-raised);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--glass-surface-raised);
+}
+
+.table-responsive {
+  background: var(--glass-surface) !important;
+}
+
+.table > thead,
+.table.table-dark > thead {
+  background: rgba(148, 163, 184, 0.1);
+  backdrop-filter: blur(16px);
+}
+
+:root[data-theme='light'] .navbar-custom {
+  background:
+    linear-gradient(110deg, rgba(34, 197, 94, 0.06), rgba(34, 197, 94, 0.05)),
+    var(--glass-surface);
+}
+
+:root[data-theme='light'] .navbar-custom .nav-link,
+:root[data-theme='light'] .navbar-custom .text-white-50 {
+  color: #1e293b !important;
+}
+
+:root[data-theme='light'] .card:not(.bg-primary):not(.bg-success):not(.bg-dark),
+:root[data-theme='light'] .table-responsive,
+:root[data-theme='light'] .program-builder__panel,
+:root[data-theme='light'] .program-builder__preview,
+:root[data-theme='light'] .clients-toolbar,
+:root[data-theme='light'] .client-card,
+:root[data-theme='light'] .clients-empty,
+:root[data-theme='light'] .clients-drawer,
+:root[data-theme='light'] .attendance-modal,
+:root[data-theme='light'] .attendance-summary,
+:root[data-theme='light'] .attendance-missed-history,
+:root[data-theme='light'] .attendance-day-editor,
+:root[data-theme='light'] .clients-weekday-option {
+  color: #0f172a;
+  border-color: rgba(255, 255, 255, 0.58);
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 18px 44px rgba(51, 65, 85, 0.1) !important;
+}
+
+:root[data-theme='light'] .form-control,
+:root[data-theme='light'] .form-select,
+:root[data-theme='light'] .clients-page .form-control,
+:root[data-theme='light'] .clients-page .form-select {
+  color: #0f172a;
+  border-color: rgba(255, 255, 255, 0.68);
+  background-color: rgba(255, 255, 255, 0.62);
+}
+
+:root[data-theme='light'] .table > thead,
+:root[data-theme='light'] .table.table-dark > thead {
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+:root[data-theme='light'] .client-card__menu {
+  color: #0f172a;
+  border-color: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+:root[data-theme='light'] .client-card__menu button {
+  color: #0f172a;
+}
+
+.theme-toggle {
+  gap: 0.55rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 999px;
+}
+
+.theme-toggle__track {
+  position: relative;
+  display: inline-flex;
+  width: 3.15rem;
+  height: 1.65rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.38rem;
+  overflow: hidden;
+  border: 1px solid rgba(134, 239, 172, 0.34);
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.16);
+}
+
+.theme-toggle__track .bi {
+  z-index: 1;
+  font-size: 0.68rem;
+  transition: opacity 180ms ease, transform 220ms ease;
+}
+
+.theme-toggle .theme-toggle__sun {
+  color: #22c55e;
+  opacity: 0.55;
+  transform: rotate(-35deg) scale(0.8);
+}
+
+.theme-toggle .theme-toggle__moon {
+  color: #cbd5e1;
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+.theme-toggle__thumb {
+  position: absolute;
+  top: 0.16rem;
+  left: 0.17rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #f3f3f3;
+  box-shadow: 0 1px 5px rgba(248, 248, 248, 0.3);
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1), background-color 180ms ease;
+}
+
+.theme-toggle[aria-checked='true'] .theme-toggle__thumb {
+  transform: translateX(1.48rem);
+}
+
+.theme-toggle[aria-checked='true'] .theme-toggle__sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+.theme-toggle[aria-checked='true'] .theme-toggle__moon {
+  opacity: 0.55;
+  transform: rotate(35deg) scale(0.8);
+}
+
+.theme-toggle__label {
+  min-width: 2.4rem;
+  text-align: left;
+}
+
+:root[data-theme='light'] .theme-toggle__track {
+  background: rgba(34, 197, 94, 0.12);
+}
+
+:root[data-theme='light'] .theme-toggle__thumb {
+  background: #fff;
+}
+
+:root[data-theme='light'] .theme-toggle .theme-toggle__sun {
+  color: #15803d;
+}
+
+:root[data-theme='light'] .theme-toggle .theme-toggle__moon {
+  color: #475569;
+}
+
+:root[data-theme='light'] .dropdown-menu,
+:root[data-theme='light'] .modal-content,
+:root[data-theme='light'] .popover {
+  color: var(--sport-text);
+  background-color: #fff;
+  border-color: var(--sport-border);
+  box-shadow: var(--sport-shadow);
+}
+
+:root[data-theme='light'] .dropdown-item {
+  color: var(--sport-text);
+}
+
+:root[data-theme='light'] .dropdown-item:hover,
+:root[data-theme='light'] .dropdown-item:focus {
+  color: var(--sport-heading);
+  background-color: rgba(34, 197, 94, 0.08);
+}
+
+:root[data-theme='light'] .modal-header,
+:root[data-theme='light'] .modal-footer {
+  border-color: var(--sport-border);
+}
+
+:root[data-theme='light'] body * {
+  color: #0f172a !important;
+}
+
+:root[data-theme='light'] body :is(h1, h2, h3, h4, h5, h6, legend, strong, th) {
+  color: #020617 !important;
+  font-weight: 700 !important;
+}
+
+:root[data-theme='light'] body :is(label, small, p, li, td, input, select, textarea, button, a) {
+  font-weight: 600 !important;
+}
+
+:root[data-theme='light'] :is(
+  .card:not(.bg-primary):not(.bg-success):not(.bg-dark),
+  .table-responsive,
+  .program-builder__panel,
+  .program-builder__preview,
+  .clients-toolbar,
+  .client-card,
+  .clients-empty,
+  .clients-drawer,
+  .attendance-modal,
+  .attendance-summary,
+  .attendance-missed-history,
+  .attendance-day-editor,
+  .clients-weekday-option,
+  .nutrition-page .nutrition-panel,
+  .nutrition-page .nutrition-client-card,
+  .nutrition-page .nutrition-program-view,
+  .nutrition-page .nutrition-empty,
+  .nutrition-page .nutrition-target,
+  .nutrition-page .nutrition-food-row,
+  .nutrition-page .nutrition-program-meal,
+  .nutrition-page .nutrition-program-view__calories,
+  .nutrition-page .nutrition-program-view__macro,
+  .nutrition-page .nutrition-profile__facts > span,
+  .nutrition-page .nutrition-history-item,
+  .nutrition-page .nutrition-client-search,
+  .nutrition-page .nutrition-food-suggestions,
+  .nutrition-page .nutrition-food-modal,
+  .workout-builder .builder-topbar,
+  .workout-builder .builder-athlete-card,
+  .workout-builder .builder-card,
+  .workout-builder .builder-program-config,
+  .workout-builder .builder-workout-grid:not(.builder-workout-grid--labels),
+  .workout-builder .builder-rpe-block,
+  .workout-builder .builder-history-modal,
+  .workout-builder .builder-library-modal,
+  .workout-builder .builder-library-group > div > button,
+  .workout-builder .builder-history__item,
+  .workout-builder .builder-welcome__client,
+  .dropdown-menu,
+  .modal-content,
+  .popover
+) {
+  color: #0f172a;
+  border-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 44px rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+:root[data-theme='light'] .card.bg-primary,
+:root[data-theme='light'] .card.bg-success,
+:root[data-theme='light'] .card.bg-dark {
+  color: #0f172a;
+  border: 1px solid rgba(34, 197, 94, 0.28);
+  background: rgba(255, 255, 255, 0.72) !important;
+  box-shadow: 0 18px 44px rgba(253, 253, 253, 0.08) !important;
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+:root[data-theme='light'] .card.bg-primary :is(h2, .card-title, a),
+:root[data-theme='light'] .card.bg-success :is(h2, .card-title, a),
+:root[data-theme='light'] .card.bg-dark :is(h2, .card-title, a) {
+  color: #0f172a !important;
+}
+
+:root[data-theme='light'] body :is(input, select, textarea, .form-control, .form-select) {
+  color: #020617 !important;
+  border-color: rgba(252, 252, 252, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.84) !important;
+  color-scheme: light;
+}
+
+:root[data-theme='light'] body :is(input, select, textarea)::placeholder {
+  color: #fcfcfc !important;
+  opacity: 1;
+}
+
+:root[data-theme='light'] body :is(input, select, textarea):focus {
+  border-color: #15803d !important;
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.16) !important;
+}
+
+:root[data-theme='light'] .navbar-custom .nav-link:hover,
+:root[data-theme='light'] .navbar-custom .nav-link:focus,
+:root[data-theme='light'] .navbar-custom .nav-link.active,
+:root[data-theme='light'] .client-card__menu button:hover,
+:root[data-theme='light'] .dropdown-item:hover,
+:root[data-theme='light'] .dropdown-item:focus {
+  background-color: rgba(34, 197, 94, 0.12);
+}
+
+:root[data-theme='light'] .table,
+:root[data-theme='light'] .table.table-dark {
+  --bs-table-color: #0f172a;
+  --bs-table-border-color: rgba(255, 255, 255, 0.16);
+  --bs-table-hover-color: #020617;
+  --bs-table-hover-bg: rgba(31, 177, 84, 0.08);
+}
+
+:root[data-theme='light'] .table > thead,
+:root[data-theme='light'] .table.table-dark > thead,
+:root[data-theme='light'] .table-light {
+  --bs-table-color: #020617;
+  --bs-table-bg: rgba(255, 255, 255, 0.72);
+}
+
+:root[data-theme='light'] .theme-toggle__track .bi {
+  color: #166534 !important;
+}
+
+:root[data-theme='light'] .nutrition-page .nutrition-food-modal {
+  color: #0f172a;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 44px rgba(248, 248, 248, 0.12);
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+/* Shared Cyber Cyan / Laser Lime glass theme. */
+:root {
+  --sport-cyan: #22c55e;
+  --sport-lime: #22c55e;
+  --sport-navy: #09090b;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #22c55e;
+  --sport-text: #fafafa;
+  --sport-muted: #d4d4d8;
+  --sport-heading: #fafafa;
+  --sport-link: #22c55e;
+  --sport-link-hover: #22c55e;
+  --sport-border: rgba(34, 197, 94, 0.1);
+  --sport-panel: rgba(9, 9, 11, 0.4);
+  --glass-surface: rgba(9, 9, 11, 0.4);
+  --glass-surface-raised: rgba(9, 9, 11, 0.54);
+  --glass-border: rgba(34, 197, 94, 0.1);
+  --sport-accent-gradient: linear-gradient(115deg, #22c55e 0%, #22c55e 100%);
+}
+
+:root[data-theme='light'] {
+  --sport-navy: #f4f4f5;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #22c55e;
+  --sport-text: #09090b;
+  --sport-muted: #09090b;
+  --sport-heading: #09090b;
+  --sport-link: #09090b;
+  --sport-link-hover: #09090b;
+  --sport-border: rgba(255, 255, 255, 0.6);
+  --sport-panel: rgba(255, 255, 255, 0.75);
+  --glass-surface: rgba(255, 255, 255, 0.75);
+  --glass-surface-raised: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --sport-accent-gradient: linear-gradient(115deg, #22c55e 0%, #22c55e 100%);
+}
+
+body {
+  color: var(--sport-text);
+  background: var(--sport-page-background, #09090b);
+}
+
+:root[data-theme='light'] body {
+  --nutrition-panel: rgba(255, 255, 255, 0.75);
+  --nutrition-panel-soft: rgba(255, 255, 255, 0.75);
+  --nutrition-border: rgba(255, 255, 255, 0.6);
+  --nutrition-muted: #09090b;
+  --nutrition-text: #09090b;
+  --builder-card: rgba(255, 255, 255, 0.75);
+  --builder-raised: rgba(255, 255, 255, 0.75);
+  --builder-text: #09090b;
+  --builder-muted: #09090b;
+}
+
+:root:not([data-theme='light']) body {
+  --nutrition-panel: rgba(9, 9, 11, 0.4);
+  --nutrition-panel-soft: rgba(9, 9, 11, 0.32);
+  --nutrition-border: rgba(34, 197, 94, 0.1);
+  --nutrition-cyan: #22c55e;
+  --nutrition-green: #22c55e;
+  --builder-card: rgba(9, 9, 11, 0.4);
+  --builder-raised: rgba(9, 9, 11, 0.48);
+  --builder-text: #fafafa;
+  --builder-muted: #d4d4d8;
+  --builder-cyan: #22c55e;
+  --builder-green: #22c55e;
+}
+
+.workout-builder {
+  --builder-bg: #09090b;
+  --builder-card: rgba(9, 9, 11, 0.4);
+  --builder-raised: rgba(9, 9, 11, 0.48);
+  --builder-input: rgba(9, 9, 11, 0.4);
+  --builder-line: rgba(34, 197, 94, 0.1);
+  --builder-text: #fafafa;
+  --builder-muted: #d4d4d8;
+  --builder-cyan: #22c55e;
+  --builder-green: #22c55e;
+}
+
+.nutrition-page {
+  --nutrition-panel: rgba(9, 9, 11, 0.4);
+  --nutrition-panel-soft: rgba(9, 9, 11, 0.32);
+  --nutrition-border: rgba(34, 197, 94, 0.1);
+  --nutrition-muted: #d4d4d8;
+  --nutrition-text: #fafafa;
+  --nutrition-cyan: #22c55e;
+  --nutrition-green: #22c55e;
+}
+
+:root[data-theme='light'] .workout-builder {
+  --builder-bg: #f4f4f5;
+  --builder-card: rgba(255, 255, 255, 0.75);
+  --builder-raised: rgba(255, 255, 255, 0.75);
+  --builder-input: rgba(255, 255, 255, 0.82);
+  --builder-line: rgba(255, 255, 255, 0.6);
+  --builder-text: #09090b;
+  --builder-muted: #09090b;
+  --builder-cyan: #22c55e;
+  --builder-green: #22c55e;
+}
+
+:root[data-theme='light'] .nutrition-page {
+  --nutrition-panel: rgba(255, 255, 255, 0.75);
+  --nutrition-panel-soft: rgba(255, 255, 255, 0.75);
+  --nutrition-border: rgba(255, 255, 255, 0.6);
+  --nutrition-muted: #09090b;
+  --nutrition-text: #09090b;
+  --nutrition-cyan: #22c55e;
+  --nutrition-green: #22c55e;
+}
+
+.navbar-custom {
+  border-color: rgba(34, 197, 94, 0.1);
+  background: rgba(9, 9, 11, 0.4);
+}
+
+.theme-toggle__track {
+  border-color: rgba(34, 197, 94, 0.16);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.theme-toggle__thumb {
+  background: #fafafa;
+}
+
+.theme-toggle .theme-toggle__sun,
+.theme-toggle .theme-toggle__moon {
+  color: #fafafa;
+}
+
+:root[data-theme='light'] .navbar-custom {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+:root[data-theme='light'] .theme-toggle__track {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+:root[data-theme='light'] .theme-toggle__thumb {
+  background: #09090b;
+}
+
+:root[data-theme='light'] .theme-toggle__track .bi,
+:root[data-theme='light'] .theme-toggle .theme-toggle__sun,
+:root[data-theme='light'] .theme-toggle .theme-toggle__moon {
+  color: #09090b !important;
+}
+
+:root:not([data-theme='light']) .theme-toggle__track .bi,
+:root:not([data-theme='light']) .theme-toggle .theme-toggle__sun,
+:root:not([data-theme='light']) .theme-toggle .theme-toggle__moon {
+  color: #fafafa !important;
+}
+
+body :is(
+  .card,
+  .table-responsive,
+  .clients-toolbar,
+  .client-card,
+  .clients-drawer,
+  .clients-modal,
+  .builder-topbar,
+  .builder-panel,
+  .builder-card,
+  .nutrition-page .nutrition-panel,
+  .nutrition-page .nutrition-client-card,
+  .nutrition-page .nutrition-program-view,
+  .nutrition-page .nutrition-empty,
+  .nutrition-page .nutrition-target,
+  .nutrition-page .nutrition-food-row,
+  .nutrition-page .nutrition-program-meal,
+  .nutrition-page .nutrition-program-view__calories,
+  .nutrition-page .nutrition-program-view__macro,
+  .nutrition-page .nutrition-profile__facts > span,
+  .nutrition-page .nutrition-history-item,
+  .nutrition-page .nutrition-client-search,
+  .nutrition-page .nutrition-food-suggestions,
+  .nutrition-page .nutrition-food-modal,
+  .program-builder__panel,
+  .program-builder__preview
+) {
+  border: 1px solid var(--sport-border) !important;
+  background: var(--sport-panel) !important;
+  box-shadow: var(--glass-shadow, var(--sport-shadow)) !important;
+  backdrop-filter: blur(24px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(145%) !important;
+}
+
+:root[data-theme='light'] body :is(
+  .card,
+  .table-responsive,
+  .clients-toolbar,
+  .client-card,
+  .clients-drawer,
+  .clients-modal,
+  .builder-topbar,
+  .builder-panel,
+  .builder-card,
+  .nutrition-page .nutrition-panel,
+  .nutrition-page .nutrition-client-card,
+  .nutrition-page .nutrition-program-view,
+  .nutrition-page .nutrition-empty,
+  .nutrition-page .nutrition-target,
+  .nutrition-page .nutrition-food-row,
+  .nutrition-page .nutrition-program-meal,
+  .nutrition-page .nutrition-program-view__calories,
+  .nutrition-page .nutrition-program-view__macro,
+  .nutrition-page .nutrition-profile__facts > span,
+  .nutrition-page .nutrition-history-item,
+  .nutrition-page .nutrition-client-search,
+  .nutrition-page .nutrition-food-suggestions,
+  .nutrition-page .nutrition-food-modal,
+  .program-builder__panel,
+  .program-builder__preview
+) {
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+
+:root:not([data-theme='light']) body :is(
+  h1, h2, h3, h4, h5, h6, p, label, small, span, strong, em, li, td, th,
+  .text-muted, .text-secondary, .form-label, .card-title,
+  .nutrition-page, .workout-builder
+) {
+  color: #fafafa;
+}
+
+:root:not([data-theme='light']) body :is(a, i, svg, .bi) {
+  color: #fafafa !important;
+}
+
+:root[data-theme='light'] body :is(
+  h1, h2, h3, h4, h5, h6, p, label, small, span, strong, em, li, td, th,
+  a, button, i, svg, .bi, .text-muted, .text-secondary, .form-label,
+  .card-title, .nutrition-page, .workout-builder
+) {
+  color: #09090b !important;
+}
+
+:root[data-theme='light'] body :is(input, select, textarea, .form-control, .form-select) {
+  color: #09090b !important;
+  background-color: rgba(255, 255, 255, 0.82) !important;
+}
+
+:root[data-theme='light'] body :is(input, select, textarea)::placeholder {
+  color: #09090b !important;
+  opacity: 0.72;
+}
+
+:root[data-theme='light'] body :is(.navbar-custom, .theme-toggle) {
+  color: #09090b !important;
+}
+
+:root[data-theme='light'] .btn-success,
+:root[data-theme='light'] .btn-primary,
+:root[data-theme='light'] .btn-success-custom {
+  background: var(--sport-accent-gradient) !important;
+}
+
+/* Premium navy, electric-blue and gold visual system. */
+:root {
+  --sport-cyan: #22c55e;
+  --sport-lime: #f5c451;
+  --sport-navy: #09090b;
+  --sport-blue-dark: #18181b;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #f4f4f5;
+  --sport-text: #eaf1fb;
+  --sport-muted: #b8c7dc;
+  --sport-heading: #f8fbff;
+  --sport-link: #f4f4f5;
+  --sport-link-hover: #f5c451;
+  --sport-border: rgba(244, 244, 245, 0.14);
+  --sport-panel: rgba(9, 9, 11, 0.62);
+  --glass-surface: rgba(9, 9, 11, 0.62);
+  --glass-surface-raised: rgba(71, 85, 105, 0.42);
+  --glass-border: rgba(244, 244, 245, 0.16);
+  --glass-shadow: 0 18px 48px rgba(2, 8, 23, 0.24);
+  --sport-accent-gradient: linear-gradient(115deg, #18181b 0%, #22c55e 68%, #f5c451 150%);
+}
+
+:root[data-theme='light'] {
+  --sport-navy: #f5f8fd;
+  --sport-blue-dark: #e7eef8;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #18181b;
+  --sport-text: #09090b;
+  --sport-muted: #52647c;
+  --sport-heading: #09090b;
+  --sport-link: #18181b;
+  --sport-link-hover: #22c55e;
+  --sport-border: rgba(71, 85, 105, 0.12);
+  --sport-panel: rgba(255, 255, 255, 0.74);
+  --glass-surface: rgba(255, 255, 255, 0.74);
+  --glass-surface-raised: rgba(255, 255, 255, 0.86);
+  --glass-border: rgba(71, 85, 105, 0.13);
+  --glass-shadow: 0 18px 44px rgba(71, 85, 105, 0.1);
+  --sport-accent-gradient: linear-gradient(115deg, #18181b 0%, #22c55e 68%, #f5c451 150%);
+}
+
+body {
+  color: var(--sport-text);
+  background: var(--sport-page-background);
+}
+
+.navbar-custom {
+  border-color: var(--glass-border);
+  background: linear-gradient(110deg, rgba(71, 85, 105, 0.32), rgba(34, 197, 94, 0.16)), var(--glass-surface);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus,
+.navbar-custom .nav-link.active {
+  background: rgba(246, 248, 247, 0.699);
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .nav-link.active {
+  color: var(--sport-link-hover) !important;
+}
+
+.navbar-custom .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.24);
+}
+
+.theme-toggle {
+  color: var(--sport-heading);
+  border-color: rgba(246, 252, 248, 0.596);
+  background: var(--glass-surface-raised);
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: rgba(253, 255, 254, 0.904);
+  border-color: rgba(245, 196, 81, 0.55);
+}
+
+.theme-toggle .bi,
+.theme-toggle__track .bi {
+  color: var(--sport-lime);
+}
+
+.theme-toggle__track {
+  border-color: rgba(245, 196, 81, 0.32);
+  background: rgba(245, 250, 247, 0.863);
+}
+
+.theme-toggle__thumb {
+  background: #fff;
+}
+
+.card,
+.table-responsive,
+.list-group-item,
+.modal-content,
+.dropdown-menu,
+.popover,
+.program-builder__panel,
+.program-builder__preview,
+.clients-toolbar,
+.client-card,
+.clients-empty,
+.clients-drawer,
+.attendance-modal,
+.attendance-summary,
+.attendance-missed-history,
+.attendance-day-editor,
+.clients-weekday-option,
+.workout-builder .builder-topbar,
+.workout-builder .builder-athlete-card,
+.workout-builder .builder-card,
+.workout-builder .builder-program-config,
+.workout-builder .builder-workout-grid:not(.builder-workout-grid--labels),
+.workout-builder .builder-rpe-block,
+.workout-builder .builder-history-modal,
+.workout-builder .builder-library-modal,
+.workout-builder .builder-history__item,
+.workout-builder .builder-welcome__client,
+.workout-builder .builder-report__section,
+.workout-builder .builder-report__facts > div,
+.workout-builder .builder-report__text,
+.workout-builder .builder-report-menu__items,
+.nutrition-page .nutrition-panel,
+.nutrition-page .nutrition-client-card,
+.nutrition-page .nutrition-program-view,
+.nutrition-page .nutrition-empty,
+.nutrition-page .nutrition-target,
+.nutrition-page .nutrition-food-row,
+.nutrition-page .nutrition-program-meal,
+.nutrition-page .nutrition-program-view__calories,
+.nutrition-page .nutrition-program-view__macro,
+.nutrition-page .nutrition-profile__facts > span,
+.nutrition-page .nutrition-history-item,
+.nutrition-page .nutrition-client-search,
+.nutrition-page .nutrition-food-suggestions,
+.nutrition-page .nutrition-food-modal {
+  color: var(--sport-text);
+  border-color: rgb(34, 197, 94, 0.32);
+  background: var(--glass-surface);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+}
+
+.card,
+.client-card,
+.nutrition-page .nutrition-client-card,
+.workout-builder .builder-history__item {
+  border-radius: 1rem;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover,
+.client-card:hover,
+.nutrition-page .nutrition-client-card:hover,
+.workout-builder .builder-history__item:hover {
+  border-color: rgba(245, 196, 81, 0.3);
+  box-shadow: 0 22px 48px rgba(2, 8, 23, 0.22);
+  transform: translateY(-2px);
+}
+
+.card.bg-primary,
+.card.bg-success,
+.card.bg-dark,
+.dashboard-nutrition-card {
+  color: #fff;
+  border-color: rgb(34, 197, 94, 0.32);
+  background: linear-gradient(135deg, #18181b, #22c55e 68%, #16a34a) !important;
+  box-shadow: 0 18px 40px rgba(34, 197, 94, 0.18) !important;
+}
+
+.card.bg-success,
+.dashboard-nutrition-card {
+  background: linear-gradient(135deg, #18181b, #22c55e 70%, #f5c451 155%) !important;
+}
+
+.card.bg-dark {
+  background: linear-gradient(135deg, #09090b, #18181b 85%) !important;
+}
+
+.card.bg-primary :is(h2, .card-title, a),
+.card.bg-success :is(h2, .card-title, a),
+.card.bg-dark :is(h2, .card-title, a),
+.dashboard-nutrition-card :is(h2, .card-title, a) {
+  color: #fff !important;
+}
+
+.btn-primary,
+.btn-success,
+.btn-success-custom,
+.builder-save-button,
+.builder-save-wide,
+.builder-primary-button,
+.nutrition-add-plan-button {
+  color: #fff;
+  border-color: rgb(34, 197, 94, 0.32);
+  background: linear-gradient(115deg, #18181b, #22c55e);
+  box-shadow: 0 10px 24px rgba(34, 197, 94, 0.2);
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-success-custom:hover,
+.builder-save-button:hover,
+.builder-save-wide:hover,
+.builder-primary-button:hover,
+.nutrition-add-plan-button:hover {
+  color: #fff;
+  background: linear-gradient(115deg, #16a34a, #22c55e 75%, #f5c451 160%);
+}
+
+.btn-warning,
+.btn-outline-warning,
+.nutrition-secondary-button,
+.builder-report__button--secondary {
+  color: #3b2b06;
+  border-color: rgba(245, 196, 81, 0.58);
+  background: linear-gradient(120deg, #f5c451, #ffdfa0);
+}
+
+.btn-outline-primary {
+  color: #f4f4f5;
+  border-color: rgba(34, 197, 94, 0.55);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #fff;
+  border-color: #22c55e;
+  background: #22c55e;
+}
+
+.form-control,
+.form-select,
+.clients-page .form-control,
+.clients-page .form-select,
+.nutrition-page input,
+.nutrition-page select,
+.nutrition-page textarea,
+.workout-builder input,
+.workout-builder select,
+.workout-builder textarea {
+  color: var(--sport-text);
+  border-color: rgb(34, 197, 94, 0.32);
+  background-color: var(--glass-surface-raised);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.form-control:focus,
+.form-select:focus,
+.clients-page .form-control:focus,
+.clients-page .form-select:focus,
+.nutrition-page input:focus,
+.nutrition-page select:focus,
+.nutrition-page textarea:focus,
+.workout-builder input:focus,
+.workout-builder select:focus,
+.workout-builder textarea:focus {
+  color: var(--sport-heading);
+  border-color: #22c55e;
+  background-color: var(--glass-surface-raised);
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.18);
+}
+
+.form-control::placeholder,
+.workout-builder input::placeholder,
+.nutrition-page input::placeholder {
+  color: var(--sport-muted);
+  opacity: 0.8;
+}
+
+.table,
+.table.table-dark,
+.builder-report__table {
+  --bs-table-color: var(--sport-text);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--sport-border);
+  --bs-table-hover-color: var(--sport-heading);
+  --bs-table-hover-bg: rgba(34, 197, 94, 0.08);
+  color: var(--sport-text);
+}
+
+.table > thead,
+.table.table-dark > thead,
+.builder-report__table thead th {
+  color: var(--sport-heading);
+  background: rgba(71, 85, 105, 0.16);
+}
+
+.table-light,
+.table-light-custom {
+  --bs-table-color: var(--sport-heading);
+  --bs-table-bg: rgba(71, 85, 105, 0.12);
+  --bs-table-border-color: var(--sport-border);
+}
+
+.dropdown-menu,
+.workout-builder .builder-report-menu__items,
+.clients-page .client-card__menu {
+  color: var(--sport-text);
+  border-color: rgb(34, 197, 94, 0.32);
+  background: var(--glass-surface-raised);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(22px) saturate(145%);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
+}
+
+.dropdown-item,
+.workout-builder .builder-report-menu__items button,
+.clients-page .client-card__menu button {
+  color: var(--sport-text);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.workout-builder .builder-report-menu__items button:hover,
+.clients-page .client-card__menu button:hover {
+  color: var(--sport-heading);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.badge-monitor,
+.program-builder__badge,
+.builder-history__item.is-current {
+  color: #fff;
+  border-color: rgb(34, 197, 94, 0.32);
+  background: linear-gradient(115deg, #18181b, #22c55e);
+}
+
+.page-heading,
+.auth-heading,
+.program-builder__heading,
+.builder-report__header h1 {
+  color: var(--sport-heading);
+}
+
+.accent-text,
+.brand-accent,
+.clients-page__eyebrow {
+  background: linear-gradient(110deg, #15b18a 10%, #25d86f 62%, #f5c451 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root[data-theme='light'] body {
+  color: #09090b;
+}
+
+:root[data-theme='light'] .card,
+:root[data-theme='light'] .table-responsive,
+:root[data-theme='light'] .list-group-item,
+:root[data-theme='light'] .modal-content,
+:root[data-theme='light'] .dropdown-menu,
+:root[data-theme='light'] .popover,
+:root[data-theme='light'] .program-builder__panel,
+:root[data-theme='light'] .program-builder__preview,
+:root[data-theme='light'] .clients-toolbar,
+:root[data-theme='light'] .client-card,
+:root[data-theme='light'] .clients-empty,
+:root[data-theme='light'] .clients-drawer,
+:root[data-theme='light'] .attendance-modal,
+:root[data-theme='light'] .attendance-summary,
+:root[data-theme='light'] .attendance-missed-history,
+:root[data-theme='light'] .attendance-day-editor,
+:root[data-theme='light'] .clients-weekday-option,
+:root[data-theme='light'] .workout-builder :is(
+  .builder-topbar, .builder-athlete-card, .builder-card, .builder-program-config,
+  .builder-workout-grid:not(.builder-workout-grid--labels), .builder-rpe-block,
+  .builder-history-modal, .builder-library-modal, .builder-history__item,
+  .builder-welcome__client, .builder-report__section, .builder-report__facts > div,
+  .builder-report__text, .builder-report-menu__items
+),
+:root[data-theme='light'] .nutrition-page :is(
+  .nutrition-panel, .nutrition-client-card, .nutrition-program-view, .nutrition-empty,
+  .nutrition-target, .nutrition-food-row, .nutrition-program-meal,
+  .nutrition-program-view__calories, .nutrition-program-view__macro,
+  .nutrition-profile__facts > span, .nutrition-history-item, .nutrition-client-search,
+  .nutrition-food-suggestions, .nutrition-food-modal
+) {
+  color: #09090b;
+  border-color: rgba(12, 129, 47, 0.897);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 18px 44px rgba(71, 85, 105, 0.1);
+}
+
+:root[data-theme='light'] .navbar-custom {
+  border-color: rgba(17, 119, 63, 0.904);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+:root[data-theme='light'] .navbar-custom .navbar-brand,
+:root[data-theme='light'] .navbar-custom .nav-link,
+:root[data-theme='light'] .navbar-custom .text-white-50 {
+  color: #09090b !important;
+}
+
+:root[data-theme='light'] .theme-toggle {
+  color: #09090b;
+  border-color: rgba(10, 121, 78, 0.918);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+:root[data-theme='light'] .theme-toggle .bi,
+:root[data-theme='light'] .theme-toggle__track .bi {
+  color: #18181b !important;
+}
+
+:root[data-theme='light'] .card:not(.bg-primary):not(.bg-success):not(.bg-dark) :is(h1, h2, h3, h4, h5, h6, p, label, small, span, strong, a, .bi),
+:root[data-theme='light'] .clients-page :is(.client-card, .clients-toolbar, .clients-drawer, .attendance-modal, .clients-empty) :is(h1, h2, h3, h4, h5, p, label, span, strong, small, .bi),
+:root[data-theme='light'] .workout-builder :is(.builder-card, .builder-history-modal, .builder-report__section, .builder-report-menu__items) :is(h1, h2, h3, h4, h5, p, label, span, strong, small, dt, dd, th, td, button, .bi),
+:root[data-theme='light'] .nutrition-page :is(.nutrition-panel, .nutrition-client-card, .nutrition-program-view, .nutrition-target, .nutrition-food-row, .nutrition-history-item, .nutrition-food-modal) :is(h1, h2, h3, h4, h5, p, label, span, strong, small, button, .bi) {
+  color: #09090b;
+}
+
+:root[data-theme='light'] .form-control,
+:root[data-theme='light'] .form-select,
+:root[data-theme='light'] .clients-page .form-control,
+:root[data-theme='light'] .clients-page .form-select,
+:root[data-theme='light'] .nutrition-page input,
+:root[data-theme='light'] .nutrition-page select,
+:root[data-theme='light'] .nutrition-page textarea,
+:root[data-theme='light'] .workout-builder input,
+:root[data-theme='light'] .workout-builder select,
+:root[data-theme='light'] .workout-builder textarea {
+  color: #09090b !important;
+  border-color: rgba(10, 121, 78, 0.918);
+  background-color: rgba(255, 255, 255, 0.86);
+  color-scheme: light;
+}
+
+:root[data-theme='light'] .table,
+:root[data-theme='light'] .table.table-dark {
+  --bs-table-color: #09090b;
+  --bs-table-hover-color: #09090b;
+  --bs-table-border-color: rgba(71, 85, 105, 0.12);
+}
+
+:root[data-theme='light'] .table > thead,
+:root[data-theme='light'] .table.table-dark > thead,
+:root[data-theme='light'] .builder-report__table thead th {
+  color: #09090b;
+  background: rgba(71, 85, 105, 0.07);
+}
+
+:root[data-theme='light'] .navbar-custom .navbar-toggler-icon {
+  filter: invert(0.2) sepia(0.25) saturate(1.8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .client-card,
+  .nutrition-page .nutrition-client-card,
+  .workout-builder .builder-history__item {
+    transition: none;
+  }
+}
+
+/* Central glass theme tokens; the theme provider sets both data-theme and .dark. */
+:root {
+  color-scheme: light;
+  --bg-app: #f8fafc;
+  --text-main: #09090b;
+  --text-muted: #475569;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgb(34, 197, 94, 0.32);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --glow-hover: rgba(34, 197, 94, 0.15);
+  --sport-cyan: #22c55e;
+  --sport-lime: #22c55e;
+  --sport-navy: #f8fafc;
+  --sport-blue-dark: #e2e8f0;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #22c55e;
+  --sport-text: var(--text-main);
+  --sport-muted: var(--text-muted);
+  --sport-heading: #09090b;
+  --sport-link: #22c55e;
+  --sport-link-hover: #16a34a;
+  --sport-border: var(--glass-border);
+  --sport-panel: var(--glass-bg);
+  --sport-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  --glass-surface: var(--glass-bg);
+  --glass-surface-raised: var(--input-bg);
+  --glass-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  --sport-accent-gradient: linear-gradient(120deg, #22c55e, #16a34a);
+}
+
+:root.dark,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg-app: #09090b;
+  --text-main: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --glass-bg: rgba(9, 9, 11, 0.45);
+  --glass-border: rgba(34, 197, 94, 0.12);
+  --input-bg: rgba(20, 20, 23, 0.6);
+  --glow-hover: rgba(34, 197, 94, 0.25);
+  --sport-cyan: #22c55e;
+  --sport-lime: #22c55e;
+  --sport-navy: #09090b;
+  --sport-blue-dark: #18181b;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #22c55e;
+  --sport-text: var(--text-main);
+  --sport-muted: var(--text-muted);
+  --sport-heading: #f4f4f5;
+  --sport-link: #22c55e;
+  --sport-link-hover: #22c55e;
+  --sport-border: var(--glass-border);
+  --sport-panel: var(--glass-bg);
+  --sport-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
+  --glass-surface: var(--glass-bg);
+  --glass-surface-raised: var(--input-bg);
+  --glass-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
+  --sport-accent-gradient: linear-gradient(120deg, #22c55e, #16a34a);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg-app: #f8fafc;
+  --text-main: #09090b;
+  --text-muted: #475569;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(34, 197, 94, 0.32);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --glow-hover: rgba(34, 197, 94, 0.15);
+  --sport-cyan: #22c55e;
+  --sport-navy: #f8fafc;
+  --sport-blue-dark: #e2e8f0;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #22c55e;
+  --sport-lime: #22c55e;
+  --sport-text: #09090b;
+  --sport-muted: #475569;
+  --sport-heading: #09090b;
+  --sport-link: #22c55e;
+  --sport-link-hover: #16a34a;
+  --sport-border: rgb(34, 197, 94, 0.32);
+  --sport-panel: rgba(255, 255, 255, 0.75);
+  --sport-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  --glass-surface: rgba(255, 255, 255, 0.75);
+  --glass-surface-raised: rgba(255, 255, 255, 0.9);
+  --glass-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  --orbit-green: rgba(34, 197, 94, 0.08);
+  --orbit-secondary: rgba(15, 23, 42, 0.06);
+  --orbit-lime: rgba(34, 197, 94, 0.08);
+  --orbit-emerald: rgba(34, 197, 94, 0.05);
+  --sport-accent-gradient: linear-gradient(120deg, #22c55e, #16a34a);
+}
+
+body,
+#root {
+  color: var(--text-main);
+  background-color: rgb(34, 197, 94, 0.32);
+}
+
+.planfit-glass-card,
+body :is(
+  .card, .table-responsive, .modal-content, .dropdown-menu, .popover, .list-group-item,
+  .clients-toolbar, .client-card, .clients-empty, .clients-drawer, .clients-modal,
+  .attendance-modal, .attendance-summary, .attendance-missed-history, .attendance-day-editor,
+  .clients-weekday-option, .builder-topbar, .builder-athlete-card, .builder-card,
+  .builder-program-config, .builder-workout-grid:not(.builder-workout-grid--labels),
+  .builder-rpe-block, .builder-history-modal, .builder-library-modal, .builder-history__item,
+  .builder-welcome__client, .builder-report__section, .builder-report__facts > div,
+  .builder-report__text, .builder-report-menu__items, .nutrition-panel,
+  .nutrition-client-card, .nutrition-program-view, .nutrition-empty, .nutrition-target,
+  .nutrition-food-row, .nutrition-program-meal, .nutrition-program-view__calories,
+  .nutrition-program-view__macro, .nutrition-profile__facts > span, .nutrition-history-item,
+  .nutrition-client-search, .nutrition-food-suggestions, .nutrition-food-modal,
+  .program-builder__panel, .program-builder__preview
+) {
+  color: var(--text-main);
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.planfit-glass-card:hover,
+body :is(
+  .card, .client-card, .nutrition-client-card, .builder-history__item
+):hover {
+  border-color: rgb(34, 197, 94, 0.32);
+  box-shadow: 0 10px 25px var(--glow-hover);
+  transform: translateY(-3px);
+}
+
+.navbar-custom {
+  color: var(--text-main);
+  border-color: rgb(34, 197, 94, 0.32);
+  background: var(--glass-bg) !important;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.form-control,
+.form-select,
+textarea,
+.clients-page .form-control,
+.clients-page .form-select,
+.workout-builder input,
+.workout-builder select,
+.workout-builder textarea,
+.nutrition-page input,
+.nutrition-page select,
+.nutrition-page textarea {
+  color: var(--text-main);
+  border-color: rgb(34, 197, 94, 0.32);
+  background-color: var(--input-bg) !important;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus,
+.workout-builder input:focus,
+.workout-builder select:focus,
+.workout-builder textarea:focus,
+.nutrition-page input:focus,
+.nutrition-page select:focus,
+.nutrition-page textarea:focus {
+  color: var(--text-main);
+  border-color: rgb(34, 197, 94, 0.32);
+  background-color: var(--input-bg) !important;
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.18);
+}
+
+body :is(h1, h2, h3, h4, h5, h6, p, label, small, dt, dd, th, td, .bi) {
+  color: var(--text-main) !important;
+}
+
+body :is(.text-muted, .text-secondary, .form-text, .clients-page__subtitle) {
+  color: var(--text-muted) !important;
+}
+
+.btn-primary,
+.btn-success,
+.btn-success-custom,
+.builder-save-button,
+.builder-save-wide,
+.builder-primary-button,
+.nutrition-add-plan-button {
+  color: #fff;
+  border-color: rgb(34, 197, 94, 0.32);
+  background: linear-gradient(115deg, #22c55e, #16a34a);
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-success-custom:hover,
+.builder-save-button:hover,
+.builder-save-wide:hover,
+.builder-primary-button:hover,
+.nutrition-add-plan-button:hover {
+  color: #fff;
+  background: linear-gradient(115deg, #15b18a, #16a34a);
+}
+
+.btn-warning,
+.btn-outline-warning,
+.nutrition-secondary-button,
+.builder-report__button--secondary {
+  color: #09090b;
+ border-color: rgb(34, 197, 94, 0.32);
+  background: #22c55e;
+}
+
+.btn :is(.bi, i),
+.btn-primary :is(.bi, i),
+.btn-success :is(.bi, i),
+.btn-success-custom :is(.bi, i),
+.builder-save-button :is(.bi, i),
+.builder-save-wide :is(.bi, i),
+.builder-primary-button :is(.bi, i),
+.nutrition-add-plan-button :is(.bi, i) {
+  color: inherit !important;
+}
+
+.table,
+.table.table-dark,
+.builder-report__table {
+  --bs-table-color: var(--text-main);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--glass-border);
+  --bs-table-hover-color: var(--text-main);
+  --bs-table-hover-bg: var(--glow-hover);
+  color: var(--text-main);
+}
+
+.table > thead,
+.table.table-dark > thead,
+.builder-report__table thead th {
+  color: var(--text-main);
+  background: var(--glass-bg);
+}
+
+.dropdown-menu,
+.builder-report-menu__items,
+.client-card__menu {
+  color: var(--text-main);
+  background-color: rgb(34, 197, 94, 0.32);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.dropdown-item,
+.builder-report-menu__items button,
+.client-card__menu button {
+  color: var(--text-main);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.builder-report-menu__items button:hover,
+.client-card__menu button:hover {
+  color: var(--text-main);
+  background-color: var(--glow-hover);
+}
+
+.badge-monitor,
+.program-builder__badge {
+  color: #09090b;
+  background: linear-gradient(115deg, #15b18a, #22c55e);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.theme-toggle,
+.theme-toggle .bi {
+  color: var(--text-main);
+}
+
+:root[data-theme='light'] body :is(h1, h2, h3, h4, h5, h6, p, label, small, dt, dd, th, td, .bi) {
+  color: #09090b !important;
+}
+
+:root.dark body :is(h1, h2, h3, h4, h5, h6, p, label, small, dt, dd, th, td, .bi),
+:root[data-theme='dark'] body :is(h1, h2, h3, h4, h5, h6, p, label, small, dt, dd, th, td, .bi) {
+  color: #f4f4f5 !important;
+}
+
+:root[data-theme='light'] body :is(
+  .card, .table-responsive, .modal-content, .dropdown-menu, .popover, .list-group-item,
+  .clients-toolbar, .client-card, .clients-empty, .clients-drawer, .clients-modal,
+  .attendance-modal, .attendance-summary, .attendance-missed-history, .attendance-day-editor,
+  .clients-weekday-option, .builder-topbar, .builder-athlete-card, .builder-card,
+  .builder-program-config, .builder-workout-grid:not(.builder-workout-grid--labels),
+  .builder-rpe-block, .builder-history-modal, .builder-library-modal, .builder-history__item,
+  .builder-welcome__client, .builder-report__section, .builder-report__facts > div,
+  .builder-report__text, .builder-report-menu__items, .nutrition-panel,
+  .nutrition-client-card, .nutrition-program-view, .nutrition-empty, .nutrition-target,
+  .nutrition-food-row, .nutrition-program-meal, .nutrition-program-view__calories,
+  .nutrition-program-view__macro, .nutrition-profile__facts > span, .nutrition-history-item,
+  .nutrition-client-search, .nutrition-food-suggestions, .nutrition-food-modal,
+  .program-builder__panel, .program-builder__preview
+) {
+  color: #09090b;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  border-color: rgb(34, 197, 94, 0.32);
+}
+
+:root.dark .card:is(.bg-primary, .bg-success, .bg-dark) :is(h1, h2, h3, h4, h5, h6, p, small, .bi),
+:root[data-theme='dark'] .card:is(.bg-primary, .bg-success, .bg-dark) :is(h1, h2, h3, h4, h5, h6, p, small, .bi),
+:root.dark .btn :is(.bi, i),
+:root[data-theme='dark'] .btn :is(.bi, i),
+:root.dark .btn-primary,
+:root.dark .btn-success,
+:root.dark .btn-success-custom,
+:root[data-theme='dark'] .btn-primary,
+:root[data-theme='dark'] .btn-success,
+:root[data-theme='dark'] .btn-success-custom {
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planfit-glass-card,
+  .planfit-glass-card:hover,
+  body :is(.card, .client-card, .nutrition-client-card, .builder-history__item),
+  body :is(.card, .client-card, .nutrition-client-card, .builder-history__item):hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer {
+  color: #09090b !important;
+  border: 1px solid #e2e8f0 !important;
+  background: #f8fafc !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer__header {
+  background: #ffffff !important;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer__header h2 {
+  color: #111827 !important;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer .form-label,
+:root[data-theme='light'] .clients-page .clients-drawer .clients-weekday-option,
+:root[data-theme='light'] .clients-page .clients-drawer .clients-weekday-option span {
+  color: #1e293b !important;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer .clients-weekday-option .form-check-input {
+  accent-color: #06b6d4 !important;
+}
+
+:root[data-theme='light'] .clients-page .clients-drawer .clients-weekday-option .form-check-input:checked {
+  accent-color: #06b6d4 !important;
+  background-color: #06b6d4 !important;
+  border-color: #06b6d4 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e") !important;
+}
+
+:root[data-theme='dark'] .clients-page .clients-drawer {
+  border-color: rgba(34, 197, 94, 0.2) !important;
+}
+
+:root[data-theme='light'] .library-search-icon,
+:root[data-theme='light'] .library-search-icon .bi {
+  color: #cbd5e1 !important;
+}
+
+:root[data-theme='light'] .nutrition-page .nutrition-add-plan-button,
+:root[data-theme='light'] .nutrition-page .nutrition-submit-button,
+:root[data-theme='light'] .workout-builder .builder-save-button {
+  color: #09090b !important;
+  background: linear-gradient(115deg, #22c55e, #10b981) !important;
+  font-weight: 600;
+}
+
+:root[data-theme='light'] .nutrition-page .nutrition-add-plan-button :is(.bi, i),
+:root[data-theme='light'] .workout-builder .builder-save-button :is(.bi, i) {
+  color: #09090b !important;
+}
+
+:root[data-theme='light'] .workout-builder .builder-history-modal {
+  color: #09090b !important;
+  border: 1px solid rgba(163, 230, 53, 0.4) !important;
+  background: #fff !important;
+}
+
+:root[data-theme='light'] .workout-builder .builder-history-modal :is(h2, label, .builder-overline) {
+  color: #09090b !important;
+}
+
+:root[data-theme='light'] .workout-builder .builder-history__item,
+:root[data-theme='light'] .workout-builder .builder-history__item.is-current {
+  color: #0f172a !important;
+  border-color: rgba(163, 230, 53, 0.4) !important;
+  background: #fff !important;
+}
+
+:root[data-theme='light'] .workout-builder .builder-history__item :is(strong, small, .bi) {
+  color: #0f172a !important;
+}
+
+:root[data-theme='light'] .workout-builder .builder-history-month input {
+  color: #0f172a;
+  border-color: rgba(71, 85, 105, 0.2);
+  background: #fff;
+  color-scheme: light;
+}
+
+
+/* =========================================================
+   PLANFIT — Green Glassmorphism + visible borders
+   Final consistency layer: keeps existing layouts and pages,
+   while unifying the green palette and making surfaces readable.
+   ========================================================= */
+
+:root {
+  --pf-green: #22c55e;
+  --pf-green-bright: #4ade80;
+  --pf-green-deep: #15803d;
+  --pf-glass-border: rgba(74, 222, 128, 0.42);
+  --pf-glass-border-soft: rgba(74, 222, 128, 0.26);
+  --pf-glass-glow: 0 0 0 1px rgba(34, 197, 94, 0.08),
+                   0 14px 38px rgba(0, 0, 0, 0.16);
+  --sport-cyan: #4ade80;
+  --sport-lime: #86efac;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #4ade80;
+  --sport-link: #4ade80;
+  --sport-link-hover: #86efac;
+  --sport-border: rgba(74, 222, 128, 0.3);
+  --glass-border: rgba(74, 222, 128, 0.32);
+  --sport-accent-gradient: linear-gradient(115deg, #15803d 0%, #22c55e 55%, #4ade80 100%);
+}
+
+:root[data-theme='light'] {
+  --sport-border: rgba(22, 101, 52, 0.28);
+  --glass-border: rgba(22, 163, 74, 0.3);
+  --pf-glass-border: rgba(22, 163, 74, 0.38);
+  --pf-glass-border-soft: rgba(22, 163, 74, 0.22);
+  --sport-accent-gradient: linear-gradient(115deg, #166534 0%, #16a34a 55%, #4ade80 100%);
+}
+
+/* Keep the green glass look consistent across the whole application. */
+.navbar-custom,
+.navbar.navbar-dark.bg-dark {
+  border: 1px solid var(--pf-glass-border) !important;
+  background:
+    linear-gradient(110deg, rgba(34, 197, 94, 0.13), rgba(74, 222, 128, 0.045)),
+    var(--glass-surface, rgba(9, 9, 11, 0.72)) !important;
+  box-shadow: var(--pf-glass-glow) !important;
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+}
+
+body :is(
+  .card, .table-responsive, .program-builder__panel, .program-builder__preview,
+  .clients-toolbar, .client-card, .clients-empty, .clients-drawer,
+  .attendance-modal, .attendance-summary, .attendance-missed-history,
+  .attendance-day-editor, .clients-weekday-option,
+  .nutrition-panel, .nutrition-client-card, .nutrition-program-view,
+  .nutrition-empty, .nutrition-target, .nutrition-food-row,
+  .nutrition-program-meal, .nutrition-program-view__calories,
+  .nutrition-program-view__macro, .nutrition-profile__facts > span,
+  .nutrition-history-item, .nutrition-client-search, .nutrition-food-suggestions,
+  .nutrition-food-modal, .builder-topbar, .builder-athlete-card, .builder-card,
+  .builder-program-config, .builder-workout-grid:not(.builder-workout-grid--labels),
+  .builder-rpe-block, .builder-history-modal, .builder-library-modal,
+  .builder-history__item, .builder-welcome__client, .builder-report__section,
+  .builder-report__facts > div, .builder-report__text,
+  .modal-content, .dropdown-menu, .popover, .list-group-item
+) {
+  border: 1px solid var(--pf-glass-border) !important;
+  box-shadow: var(--pf-glass-glow);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+}
+
+/* Distinct outlines for nested panels and interactive list rows. */
+body :is(
+  .program-builder__exercise-item, .builder-workout-grid__item,
+  .builder-library-group > div > button, .builder-history__item,
+  .builder-welcome__client, .nutrition-food-row, .nutrition-history-item,
+  .nutrition-profile__facts > span, .clients-weekday-option
+) {
+  border: 1px solid var(--pf-glass-border-soft) !important;
+  border-radius: 0.8rem;
+}
+
+body :is(.form-control, .form-select, input, select, textarea) {
+  border: 1px solid var(--pf-glass-border) !important;
+  border-radius: 0.7rem;
+  outline: none;
+}
+
+body :is(.form-control, .form-select, input, select, textarea):focus {
+  border-color: var(--pf-green-bright) !important;
+  box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.2) !important;
+}
+
+body :is(.btn, .theme-toggle, .navbar-toggler) {
+  border-color: var(--pf-glass-border) !important;
+}
+
+body :is(.btn-primary, .btn-success, .btn-success-custom, .program-builder__badge, .badge-monitor) {
+  color: #fff !important;
+  background: var(--sport-accent-gradient) !important;
+  border: 1px solid rgba(134, 239, 172, 0.48) !important;
+}
+
+body :is(.btn-outline-primary, .btn-outline-success) {
+  color: var(--pf-green-bright) !important;
+  border: 1px solid var(--pf-glass-border) !important;
+}
+
+body :is(.btn-outline-primary, .btn-outline-success):hover {
+  color: #fff !important;
+  background: rgba(22, 163, 74, 0.8) !important;
+}
+
+body :is(.table, .table.table-dark) {
+  --bs-table-border-color: var(--pf-glass-border-soft);
+}
+
+body .table > :is(thead, tbody, tfoot) > tr > :is(th, td) {
+  border-color: var(--pf-glass-border-soft) !important;
+}
+
+body .table > thead {
+  background: rgba(34, 197, 94, 0.14) !important;
+}
+
+body :is(.card, .client-card, .nutrition-client-card, .builder-card) {
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+body :is(.card, .client-card, .nutrition-client-card, .builder-card):hover {
+  border-color: rgba(74, 222, 128, 0.62) !important;
+}
+
+body :is(a, .accent-link, .brand-accent, .accent-text) {
+  text-decoration-color: rgba(74, 222, 128, 0.55);
+}
+
+body :is(.text-primary, .text-success, .text-info, .highlight-text, .program-builder__section-title) {
+  color: var(--pf-green-bright) !important;
+}
+
+:root[data-theme='light'] body :is(
+  .card, .table-responsive, .program-builder__panel, .program-builder__preview,
+  .clients-toolbar, .client-card, .clients-empty, .clients-drawer,
+  .attendance-modal, .attendance-summary, .attendance-missed-history,
+  .attendance-day-editor, .clients-weekday-option, .nutrition-panel,
+  .nutrition-client-card, .nutrition-program-view, .nutrition-empty,
+  .nutrition-target, .nutrition-food-row, .nutrition-program-meal,
+  .nutrition-program-view__calories, .nutrition-program-view__macro,
+  .nutrition-profile__facts > span, .nutrition-history-item,
+  .nutrition-client-search, .nutrition-food-suggestions, .nutrition-food-modal,
+  .builder-topbar, .builder-athlete-card, .builder-card, .builder-program-config,
+  .builder-workout-grid:not(.builder-workout-grid--labels), .builder-rpe-block,
+  .builder-history-modal, .builder-library-modal, .builder-history__item,
+  .builder-welcome__client, .builder-report__section, .builder-report__facts > div,
+  .builder-report__text, .modal-content, .dropdown-menu, .popover, .list-group-item
+) {
+  border-color: rgba(22, 163, 74, 0.3) !important;
+}
+
+:root[data-theme='light'] body :is(.form-control, .form-select, input, select, textarea) {
+  border-color: rgba(22, 163, 74, 0.32) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body :is(.card, .client-card, .nutrition-client-card, .builder-card) {
+    transition: none !important;
+  }
+}
+
+/* =========================================================
+   PLANFIT — Light mode background must stay WHITE, not green
+   ========================================================= */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --pf-light-page: #ffffff;
+  --pf-light-surface: rgba(255, 255, 255, 0.96);
+  --pf-light-surface-soft: rgba(255, 255, 255, 0.88);
+  --pf-light-border: rgba(22, 163, 74, 0.28);
+  --pf-light-text: #1f2937;
+}
+
+:root[data-theme='light'] html,
+:root[data-theme='light'] body,
+:root[data-theme='light'] #root,
+:root[data-theme='light'] #app,
+:root[data-theme='light'] .app,
+:root[data-theme='light'] .app-layout,
+:root[data-theme='light'] .app-shell,
+:root[data-theme='light'] .main-layout,
+:root[data-theme='light'] .main-content,
+:root[data-theme='light'] .content-wrapper,
+:root[data-theme='light'] .page-content,
+:root[data-theme='light'] main,
+:root[data-theme='light'] .dashboard-page,
+:root[data-theme='light'] .clients-page,
+:root[data-theme='light'] .nutrition-page,
+:root[data-theme='light'] .calculations-page,
+:root[data-theme='light'] .exercises-page,
+:root[data-theme='light'] .progress-page,
+:root[data-theme='light'] .profile-page,
+:root[data-theme='light'] .saved-programs-page,
+:root[data-theme='light'] .programs-page,
+:root[data-theme='light'] .workout-builder,
+:root[data-theme='light'] .program-builder {
+  color: var(--pf-light-text) !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* White, readable surfaces in light mode; keep green only for accents and borders. */
+:root[data-theme='light'] body :is(
+  .card, .table-responsive, .program-builder__panel, .program-builder__preview,
+  .clients-toolbar, .client-card, .clients-empty, .clients-drawer,
+  .attendance-modal, .attendance-summary, .attendance-missed-history,
+  .attendance-day-editor, .clients-weekday-option, .nutrition-panel,
+  .nutrition-client-card, .nutrition-program-view, .nutrition-empty,
+  .nutrition-target, .nutrition-food-row, .nutrition-program-meal,
+  .nutrition-program-view__calories, .nutrition-program-view__macro,
+  .nutrition-profile__facts > span, .nutrition-history-item,
+  .nutrition-client-search, .nutrition-food-suggestions, .nutrition-food-modal,
+  .builder-topbar, .builder-athlete-card, .builder-card, .builder-program-config,
+  .builder-workout-grid:not(.builder-workout-grid--labels), .builder-rpe-block,
+  .builder-history-modal, .builder-library-modal, .builder-history__item,
+  .builder-welcome__client, .builder-report__section, .builder-report__facts > div,
+  .builder-report__text, .modal-content, .dropdown-menu, .popover, .list-group-item,
+  .table, .table thead, .table tbody, .table tr
+) {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #1f2937;
+  border-color: var(--pf-light-border) !important;
+}
+
+:root[data-theme='light'] body :is(.navbar-custom, .navbar.navbar-dark.bg-dark) {
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #1f2937 !important;
+  border-color: var(--pf-light-border) !important;
+}
+
+:root[data-theme='light'] body :is(.text-primary, .text-success, .text-info, .highlight-text, .program-builder__section-title) {
+  color: #15803d !important;
+}
+
+/* =========================================================
+   PLANFIT — Dark mode background must stay BLACK, not green
+   ========================================================= */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --pf-dark-page: #080808;
+  --pf-dark-surface: rgba(18, 18, 18, 0.88);
+  --pf-dark-surface-soft: rgba(25, 25, 25, 0.82);
+  --pf-dark-border: rgba(180, 180, 180, 0.28);
+  --pf-dark-text: #f3f4f6;
+}
+
+:root[data-theme='dark'] html,
+:root[data-theme='dark'] body,
+:root[data-theme='dark'] #root,
+:root[data-theme='dark'] #app,
+:root[data-theme='dark'] .app,
+:root[data-theme='dark'] .app-layout,
+:root[data-theme='dark'] .app-shell,
+:root[data-theme='dark'] .main-layout,
+:root[data-theme='dark'] .main-content,
+:root[data-theme='dark'] .content-wrapper,
+:root[data-theme='dark'] .page-content,
+:root[data-theme='dark'] main,
+:root[data-theme='dark'] .dashboard-page,
+:root[data-theme='dark'] .clients-page,
+:root[data-theme='dark'] .nutrition-page,
+:root[data-theme='dark'] .calculations-page,
+:root[data-theme='dark'] .exercises-page,
+:root[data-theme='dark'] .progress-page,
+:root[data-theme='dark'] .profile-page,
+:root[data-theme='dark'] .saved-programs-page,
+:root[data-theme='dark'] .programs-page,
+:root[data-theme='dark'] .workout-builder,
+:root[data-theme='dark'] .program-builder {
+  color: var(--pf-dark-text) !important;
+  background-color: #080808 !important;
+  background-image: none !important;
+}
+
+/* Keep dark glass panels charcoal/black; green remains an accent only. */
+:root[data-theme='dark'] body :is(
+  .card, .table-responsive, .program-builder__panel, .program-builder__preview,
+  .clients-toolbar, .client-card, .clients-empty, .clients-drawer,
+  .attendance-modal, .attendance-summary, .attendance-missed-history,
+  .attendance-day-editor, .clients-weekday-option, .nutrition-panel,
+  .nutrition-client-card, .nutrition-program-view, .nutrition-empty,
+  .nutrition-target, .nutrition-food-row, .nutrition-program-meal,
+  .nutrition-program-view__calories, .nutrition-program-view__macro,
+  .nutrition-profile__facts > span, .nutrition-history-item,
+  .nutrition-client-search, .nutrition-food-suggestions, .nutrition-food-modal,
+  .builder-topbar, .builder-athlete-card, .builder-card, .builder-program-config,
+  .builder-workout-grid:not(.builder-workout-grid--labels), .builder-rpe-block,
+  .builder-history-modal, .builder-library-modal, .builder-history__item,
+  .builder-welcome__client, .builder-report__section, .builder-report__facts > div,
+  .builder-report__text, .modal-content, .dropdown-menu, .popover, .list-group-item
+) {
+  background-color: rgba(18, 18, 18, 0.92) !important;
+  background-image: none !important;
+  color: #f3f4f6;
+  border-color: var(--pf-dark-border) !important;
+}
+
+:root[data-theme='dark'] body :is(.navbar-custom, .navbar.navbar-dark.bg-dark) {
+  background: rgba(10, 10, 10, 0.96) !important;
+  color: #f3f4f6 !important;
+  border-color: var(--pf-dark-border) !important;
+}
+
+:root[data-theme='dark'] body :is(.table, .table thead, .table tbody, .table tr) {
+  background-color: #111111 !important;
+  color: #f3f4f6;
+  --bs-table-bg: #111111;
+  --bs-table-color: #f3f4f6;
+  --bs-table-border-color: var(--pf-dark-border);
+}
+
+:root[data-theme='dark'] body :is(.table th, .table td) {
+  border-color: var(--pf-dark-border) !important;
+}
+
+/* =========================================================
+   PLANFIT FINAL POLISH — visible borders + green headings
+   Works in both light and dark themes.
+   ========================================================= */
+/* Green border tokens: one scale per theme, consumed by every border rule. */
+:root[data-theme='light'] {
+  --pf-border: rgba(21, 128, 61, 0.38);
+  --pf-border-soft: rgba(21, 128, 61, 0.24);
+  --pf-border-strong: rgba(22, 163, 74, 0.6);
+  --pf-light-border: rgba(21, 128, 61, 0.38);
+  --pf-glass-border: rgba(21, 128, 61, 0.38);
+  --pf-glass-border-soft: rgba(21, 128, 61, 0.24);
+  --sport-border: rgba(21, 128, 61, 0.38);
+  --glass-border: rgba(21, 128, 61, 0.38);
+}
+
+:root[data-theme='dark'] {
+  --pf-border: rgba(74, 222, 128, 0.42);
+  --pf-border-soft: rgba(74, 222, 128, 0.24);
+  --pf-border-strong: rgba(74, 222, 128, 0.66);
+  --pf-dark-border: rgba(74, 222, 128, 0.42);
+  --pf-glass-border: rgba(74, 222, 128, 0.42);
+  --pf-glass-border-soft: rgba(74, 222, 128, 0.24);
+  --sport-border: rgba(74, 222, 128, 0.42);
+  --glass-border: rgba(74, 222, 128, 0.42);
+}
+
+/* Borders should be easy to distinguish without looking too heavy. */
+:root[data-theme='light'] body :is(
+  .card, .stat-card, .client-card, .client-card *, .panel, .panel-card,
+  .program-builder__panel, .program-builder__preview, .nutrition-panel,
+  .nutrition-client-card, .builder-card, .builder-athlete-card,
+  .builder-program-config, .builder-report__section, .modal-content,
+  .dropdown-menu, .popover, .list-group-item, .table-responsive,
+  input, select, textarea, .form-control, .form-select, .btn-outline-primary,
+  .btn-outline-success, .exercise-card, .session-card, .progress-card
+) {
+  border-color: var(--pf-border);
+}
+
+:root[data-theme='dark'] body :is(
+  .card, .stat-card, .client-card, .panel, .panel-card,
+  .program-builder__panel, .program-builder__preview, .nutrition-panel,
+  .nutrition-client-card, .builder-card, .builder-athlete-card,
+  .builder-program-config, .builder-report__section, .modal-content,
+  .dropdown-menu, .popover, .list-group-item, .table-responsive,
+  input, select, textarea, .form-control, .form-select,
+  .exercise-card, .session-card, .progress-card
+) {
+  border-color: var(--pf-border) !important;
+}
+
+:root[data-theme='light'] body :is(input, select, textarea, .form-control, .form-select):focus {
+  border-color: var(--pf-border-strong) !important;
+  box-shadow: 0 0 0 0.2rem rgba(21, 128, 61, 0.16) !important;
+}
+
+:root[data-theme='dark'] body :is(input, select, textarea, .form-control, .form-select):focus {
+  border-color: var(--pf-border-strong) !important;
+  box-shadow: 0 0 0 0.2rem rgba(74, 222, 128, 0.18) !important;
+}
+
+/* Main headings are green and remain high-contrast in both themes. */
+:root[data-theme='light'] body :is(
+  h1, h2, h3, h4, h5, h6,
+  .page-title, .section-title, .card-title, .modal-title,
+  .dashboard-title, .clients-title, .nutrition-title,
+  .calculations-title, .exercises-title, .progress-title,
+  .profile-title, .program-builder__title, .builder-title,
+  .builder-section-title, .program-builder__section-title,
+  .stat-card__title, .chart-title
+) {
+  color: #15803d !important;
+}
+
+:root[data-theme='dark'] body :is(
+  h1, h2, h3, h4, h5, h6,
+  .page-title, .section-title, .card-title, .modal-title,
+  .dashboard-title, .clients-title, .nutrition-title,
+  .calculations-title, .exercises-title, .progress-title,
+  .profile-title, .program-builder__title, .builder-title,
+  .builder-section-title, .program-builder__section-title,
+  .stat-card__title, .chart-title
+) {
+  color: #4ade80 !important;
+}
+
+/* =========================================================
+   PLANFIT — card border and heading colors by visual hierarchy
+   Larger cards/headings get a stronger green; smaller items use
+   softer green/neutral borders to keep the interface balanced.
+   ========================================================= */
+
+/* Large / primary cards */
+:root[data-theme='light'] body :is(
+  .dashboard-main-card, .main-stat-card, .featured-card,
+  .program-builder__panel, .program-builder__preview,
+  .nutrition-panel, .builder-card, .builder-program-config
+) {
+  border: 1.5px solid var(--pf-border-strong) !important;
+}
+
+:root[data-theme='dark'] body :is(
+  .dashboard-main-card, .main-stat-card, .featured-card,
+  .program-builder__panel, .program-builder__preview,
+  .nutrition-panel, .builder-card, .builder-program-config
+) {
+  border: 1.5px solid var(--pf-border-strong) !important;
+}
+
+/* Standard cards */
+:root[data-theme='light'] body :is(
+  .card, .stat-card, .client-card, .nutrition-client-card,
+  .builder-athlete-card, .exercise-card, .session-card, .progress-card,
+  .panel, .panel-card, .builder-report__section
+) {
+  border: 1px solid var(--pf-border) !important;
+}
+
+:root[data-theme='dark'] body :is(
+  .card, .stat-card, .client-card, .nutrition-client-card,
+  .builder-athlete-card, .exercise-card, .session-card, .progress-card,
+  .panel, .panel-card, .builder-report__section
+) {
+  border: 1px solid var(--pf-border) !important;
+}
+
+/* Compact cards and small interactive elements use a quieter outline. */
+:root[data-theme='light'] body :is(
+  .list-group-item, .nutrition-profile__facts > span,
+  .nutrition-program-view__macro, .nutrition-history-item,
+  .builder-history__item, .builder-welcome__client
+) {
+  border: 1px solid var(--pf-border-soft) !important;
+}
+
+:root[data-theme='dark'] body :is(
+  .list-group-item, .nutrition-profile__facts > span,
+  .nutrition-program-view__macro, .nutrition-history-item,
+  .builder-history__item, .builder-welcome__client
+) {
+  border: 1px solid #454d48 !important;
+}
+
+/* Heading colors scale with heading size / importance. */
+:root[data-theme='light'] body h1,
+:root[data-theme='light'] body h2,
+:root[data-theme='light'] body .page-title,
+:root[data-theme='light'] body .dashboard-title,
+:root[data-theme='light'] body .clients-title,
+:root[data-theme='light'] body .nutrition-title,
+:root[data-theme='light'] body .calculations-title,
+:root[data-theme='light'] body .exercises-title,
+:root[data-theme='light'] body .progress-title,
+:root[data-theme='light'] body .profile-title {
+  color: #15803d !important;
+}
+
+:root[data-theme='dark'] body h1,
+:root[data-theme='dark'] body h2,
+:root[data-theme='dark'] body .page-title,
+:root[data-theme='dark'] body .dashboard-title,
+:root[data-theme='dark'] body .clients-title,
+:root[data-theme='dark'] body .nutrition-title,
+:root[data-theme='dark'] body .calculations-title,
+:root[data-theme='dark'] body .exercises-title,
+:root[data-theme='dark'] body .progress-title,
+:root[data-theme='dark'] body .profile-title {
+  color: #4ade80 !important;
+}
+
+:root[data-theme='light'] body h3,
+:root[data-theme='light'] body h4,
+:root[data-theme='light'] body .section-title,
+:root[data-theme='light'] body .card-title,
+:root[data-theme='light'] body .modal-title,
+:root[data-theme='light'] body .builder-section-title,
+:root[data-theme='light'] body .program-builder__section-title,
+:root[data-theme='light'] body .chart-title {
+  color: #238348 !important;
+}
+
+:root[data-theme='dark'] body h3,
+:root[data-theme='dark'] body h4,
+:root[data-theme='dark'] body .section-title,
+:root[data-theme='dark'] body .card-title,
+:root[data-theme='dark'] body .modal-title,
+:root[data-theme='dark'] body .builder-section-title,
+:root[data-theme='dark'] body .program-builder__section-title,
+:root[data-theme='dark'] body .chart-title {
+  color: #86efac !important;
+}
+
+:root[data-theme='light'] body h5,
+:root[data-theme='light'] body h6,
+:root[data-theme='light'] body .stat-card__title,
+:root[data-theme='light'] body .text-muted-title {
+  color: #36734a !important;
+}
+
+:root[data-theme='dark'] body h5,
+:root[data-theme='dark'] body h6,
+:root[data-theme='dark'] body .stat-card__title,
+:root[data-theme='dark'] body .text-muted-title {
+  color: #a7f3c0 !important;
+}
+
+/* =========================================================
+   PLANFIT — green border scale (authoritative layer)
+   Every page stylesheet reads these variables, so the token
+   pair retints all outlines when the theme switches.
+   The doubled :root keeps this layer above the older
+   `:root[data-theme=...] body :is(...)` !important layers.
+   ========================================================= */
+:root {
+  --pf-border: rgba(74, 222, 128, 0.42);
+  --pf-border-soft: rgba(74, 222, 128, 0.24);
+  --pf-border-strong: rgba(74, 222, 128, 0.66);
+}
+
+:root[data-theme='light'] {
+  --pf-border: rgba(21, 128, 61, 0.38);
+  --pf-border-soft: rgba(21, 128, 61, 0.24);
+  --pf-border-strong: rgba(22, 163, 74, 0.6);
+}
+
+:root[data-theme='dark'] {
+  --pf-border: rgba(74, 222, 128, 0.42);
+  --pf-border-soft: rgba(74, 222, 128, 0.24);
+  --pf-border-strong: rgba(74, 222, 128, 0.66);
+}
+
+/* Surfaces: cards, panels, modals, menus, tables, drawer. */
+:root:root body :is(
+  .card, .table-responsive, .list-group-item, .modal-content, .dropdown-menu,
+  .popover, .navbar-custom, .program-builder__panel, .program-builder__preview,
+  .clients-toolbar, .client-card, .clients-empty, .clients-drawer, .clients-modal,
+  .attendance-modal, .attendance-summary, .attendance-missed-history,
+  .attendance-day-editor, .clients-weekday-option, .client-card__menu,
+  .nutrition-panel, .nutrition-client-card, .nutrition-program-view,
+  .nutrition-empty, .nutrition-target, .nutrition-food-row,
+  .nutrition-program-meal, .nutrition-program-view__calories,
+  .nutrition-program-view__macro, .nutrition-profile__facts > span,
+  .nutrition-history-item, .nutrition-client-search, .nutrition-food-suggestions,
+  .nutrition-food-modal, .builder-topbar, .builder-athlete-card, .builder-card,
+  .builder-panel, .builder-program-config,
+  .builder-workout-grid:not(.builder-workout-grid--labels), .builder-rpe-block,
+  .builder-history-modal, .builder-library-modal, .builder-history__item,
+  .builder-welcome__client, .builder-report__section, .builder-report__facts > div,
+  .builder-report__text, .builder-report-menu__items, .calculation-panel
+) {
+  border: 1px solid var(--pf-border) !important;
+}
+
+/* Compact / nested rows get a quieter green. */
+:root:root body :is(
+  .program-builder__exercise-item, .builder-workout-grid__item,
+  .builder-library-group > div > button, .nutrition-food-row,
+  .nutrition-history-item, .clients-weekday-option
+) {
+  border: 1px solid var(--pf-border-soft) !important;
+}
+
+/* Inputs and their focus ring. */
+:root:root body :is(.form-control, .form-select, .form-check-input, input, select, textarea) {
+  border: 1px solid var(--pf-border) !important;
+}
+
+:root:root body :is(.form-control, .form-select, input, select, textarea):focus,
+:root:root body :is(.form-control, .form-select, input, select, textarea):focus-visible {
+  border-color: var(--pf-border-strong) !important;
+  box-shadow: 0 0 0 0.2rem var(--pf-border-soft) !important;
+}
+
+/* Buttons keep a green outline except filled primaries. */
+:root:root body :is(
+  .btn-outline-primary, .btn-outline-success, .btn-outline-danger,
+  .btn-outline-warning, .theme-toggle, .navbar-toggler, .clients-icon-button,
+  .smart-back-button, .btn-edit-client, .nutrition-secondary-button,
+  .builder-report__button--secondary
+) {
+  border-color: var(--pf-border) !important;
+}
+
+:root:root body :is(.btn, .theme-toggle, .navbar-toggler):hover,
+:root:root body :is(.btn, .theme-toggle, .navbar-toggler):focus-visible {
+  border-color: var(--pf-border-strong) !important;
+}
+
+/* Card hover lifts to the strong green. */
+:root:root body :is(.card, .client-card, .nutrition-client-card, .builder-card,
+  .builder-history__item):hover {
+  border-color: var(--pf-border-strong) !important;
+}
+
+/* Table grid lines. */
+:root:root body :is(.table, .table.table-dark, .builder-report__table) {
+  --bs-table-border-color: var(--pf-border-soft);
+}
+
+:root:root body .table > :is(thead, tbody, tfoot) > tr > :is(th, td) {
+  border-color: var(--pf-border-soft) !important;
+}
+
+

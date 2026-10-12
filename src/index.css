@@ -1,0 +1,196 @@
+:root {
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+  color: var(--sport-text);
+  background: var(--bg-app);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --bg-app: #f8fafc;
+  --text-main: #09090b;
+  --text-muted: #475569;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --glow-hover: rgba(34, 197, 94, 0.15);
+  --sport-navy: #f8fafc;
+  --sport-cyan: #22c55e;
+  --sport-blue-dark: #e2e8f0;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #22c55e;
+  --sport-lime: #22c55e;
+  --sport-coral: #22c55e;
+  --sport-text: var(--text-main);
+  --sport-muted: var(--text-muted);
+  --sport-heading: #09090b;
+  --sport-link: #22c55e;
+  --sport-link-hover: #16a34a;
+  --sport-border: var(--glass-border);
+  --sport-panel: var(--glass-bg);
+  --sport-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  --glass-surface: var(--glass-bg);
+  --glass-surface-raised: var(--input-bg);
+  --glass-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  --orbit-green: rgba(34, 197, 94, 0.08);
+  --orbit-secondary: rgba(15, 23, 42, 0.06);
+  --orbit-lime: rgba(34, 197, 94, 0.08);
+  --orbit-emerald: rgba(34, 197, 94, 0.05);
+  --sport-accent-gradient: linear-gradient(120deg, #22c55e, #16a34a);
+  --sport-page-background: var(--bg-app);
+}
+
+:root.dark,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg-app: #09090b;
+  --text-main: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --glass-bg: rgba(9, 9, 11, 0.45);
+  --glass-border: rgba(34, 197, 94, 0.12);
+  --input-bg: rgba(20, 20, 23, 0.6);
+  --glow-hover: rgba(34, 197, 94, 0.25);
+  --sport-navy: #09090b;
+  --sport-cyan: #22c55e;
+  --sport-blue-dark: #18181b;
+  --sport-blue: #22c55e;
+  --sport-blue-light: #22c55e;
+  --sport-lime: #22c55e;
+  --sport-coral: #22c55e;
+  --sport-text: var(--text-main);
+  --sport-muted: var(--text-muted);
+  --sport-heading: #f4f4f5;
+  --sport-link: #22c55e;
+  --sport-link-hover: #22c55e;
+  --sport-border: var(--glass-border);
+  --sport-panel: var(--glass-bg);
+  --sport-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
+  --glass-surface: var(--glass-bg);
+  --glass-surface-raised: var(--input-bg);
+  --glass-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
+  --orbit-green: rgba(34, 197, 94, 0.1);
+  --orbit-secondary: rgba(244, 244, 245, 0.045);
+  --orbit-lime: rgba(34, 197, 94, 0.08);
+  --orbit-emerald: rgba(34, 197, 94, 0.05);
+  --sport-accent-gradient: linear-gradient(120deg, #22c55e, #16a34a);
+  --sport-page-background: var(--bg-app);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--sport-navy);
+}
+
+body {
+  position: relative;
+  isolation: isolate;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--sport-text);
+  background: var(--bg-app);
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+body::before,
+body::after {
+  position: fixed;
+  z-index: 0;
+  width: min(650px, 90vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  content: "";
+  filter: blur(150px);
+  opacity: 1;
+  pointer-events: none;
+  will-change: transform;
+}
+
+body::before {
+  top: -20%;
+  left: -10%;
+  background: radial-gradient(circle, var(--orbit-green) 0%, transparent 70%);
+  animation: movingBlob 30s infinite alternate ease-in-out;
+}
+
+body::after {
+  right: -10%;
+  bottom: -10%;
+  width: min(700px, 92vw);
+  background: radial-gradient(circle, var(--orbit-secondary) 0%, transparent 72%);
+  animation: movingBlob 30s infinite alternate ease-in-out;
+  animation-delay: 4s;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: var(--sport-text);
+}
+
+#root::before {
+  content: none;
+}
+
+@keyframes movingBlob {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, -40px) scale(1.05); }
+  100% { transform: translate(-20px, 20px) scale(1); }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--sport-heading, #f3f8ff);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+p,
+label,
+small {
+  color: var(--sport-muted);
+}
+
+a {
+  color: var(--sport-link, #22c55e);
+}
+
+a:hover {
+  color: var(--sport-link-hover, #16a34a);
+}
+
+::selection {
+  color: #fff;
+  background: #22c55e;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: var(--bg-app);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  body::before,
+  body::after {
+    animation: none;
+  }
+}
